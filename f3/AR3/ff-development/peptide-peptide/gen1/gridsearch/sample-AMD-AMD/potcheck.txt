@@ -1,0 +1,17 @@
+AMD-AMD fpb1000-min25-step09 1 1 1
+AMD-AMD fpb1000-min28-step05 1 1 1
+AMD-AMD fpb1000-min28-step07 1 1 1
+AMD-AMD fpb1000-min28-step09 1 1 1
+AMD-AMD fpb1000-min31-step07 1 1 1
+AMD-AMD fpb1000-min31-step09 1 1 1
+AMD-AMD fpb2000-min25-step09 1 1 1
+AMD-AMD fpb2000-min28-step05 1 1 1
+AMD-AMD fpb2000-min28-step07 1 1 1
+AMD-AMD fpb2000-min31-step07 1 1 1
+AMD-AMD fpb2000-min31-step09 1 1 1
+AMD-AMD fpb3000-min25-step09 1 1 1
+AMD-AMD fpb3000-min28-step05 1 1 1
+AMD-AMD fpb3000-min28-step07 1 1 1
+AMD-AMD fpb3000-min28-step09 1 1 1
+AMD-AMD fpb3000-min31-step07 1 1 1
+AMD-AMD fpb3000-min31-step09 1 1 1

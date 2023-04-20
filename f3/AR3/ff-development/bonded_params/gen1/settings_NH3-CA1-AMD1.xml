@@ -1,0 +1,24 @@
+<cg>
+<!--angles-->
+	<bonded>
+		<name>NH3-CA1-AMD1</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>NH3-CA1-AMD1.dist.tgt</target>
+			<gromacs>
+				<table>table_NH3-CA1-AMD1.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+
+  <inverse>
+    <gromacs>
+      <table_bins>0.05</table_bins>
+      <pot_max>1e8</pot_max>
+      <table_end>180</table_end>
+    </gromacs>
+  </inverse>
+
+</cg>

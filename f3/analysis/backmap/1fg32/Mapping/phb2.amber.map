@@ -1,0 +1,15 @@
+[ molecule ]
+PHB2
+
+[ martini ]
+PHB2
+
+[ mapping ]
+amber
+
+[ atoms ]
+   1   CE1  PHB2
+   2   HE1  PHB2
+   3    CZ  PHB2
+   4    HZ  PHB2
+   

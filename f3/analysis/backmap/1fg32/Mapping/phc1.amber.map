@@ -1,0 +1,15 @@
+[ molecule ]
+PHC1
+
+[ martini ]
+PHC1
+
+[ mapping ]
+amber
+
+[ atoms ]
+   1   CE2  PHC1
+   2   HE2  PHC1
+   3   CD2  PHC1
+   4   HD2  PHC1
+   

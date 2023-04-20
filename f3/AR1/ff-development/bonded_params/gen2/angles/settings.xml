@@ -1,0 +1,209 @@
+<cg>
+  <bonded>
+    <name>F1B1N</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>F1B1N.dist.tgt</target>
+      <gromacs>
+        <table>table_a21.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>F1B1A1</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>F1B1A1.dist.tgt</target>
+      <gromacs>
+        <table>table_a22.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>NB1A1</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>NB1A1.dist.tgt</target>
+      <gromacs>
+        <table>table_a23.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>B1A1B2</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>B1A1B2.dist.tgt</target>
+      <gromacs>
+        <table>table_a24.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>A1B2F2</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>A1B2F2.dist.tgt</target>
+      <gromacs>
+        <table>table_a25.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>A1B2A2</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>A1B2A2.dist.tgt</target>
+      <gromacs>
+        <table>table_a26.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>B2A2B3</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>B2A2B3.dist.tgt</target>
+      <gromacs>
+        <table>table_a27.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>F2B2A2</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>F2B2A2.dist.tgt</target>
+      <gromacs>
+        <table>table_a28.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>A2B3F3</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>A2B3F3.dist.tgt</target>
+      <gromacs>
+        <table>table_a29.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>A2B3C</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>A2B3C.dist.tgt</target>
+      <gromacs>
+        <table>table_a30.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+  <bonded>
+    <name>F3B3C</name>
+    <min>0.0</min>
+    <max>3.1</max>
+    <step>0.02</step>
+    <inverse>
+      <target>F3B3C.dist.tgt</target>
+      <gromacs>
+        <table>table_a31.xvg</table>
+      </gromacs>
+    </inverse>
+  </bonded>
+
+  <!-- general options for inverse script -->
+  <inverse>
+    <kBT>2.49435</kBT> <!-- 300*0.00831451 gromacs units -->
+    <program>gromacs</program> <!-- use gromacs as simulation program -->
+    <gromacs> <!-- gromacs specific options -->
+      <equi_time>20</equi_time> <!-- trash so many frames at the beginning -->
+      <table_bins>5</table_bins> <!-- grid for table*.xvg !-->
+      <pot_max>1e8</pot_max> <!-- cut the potential at this value (gromacs bug) -->
+      <table_end>180.0</table_end> <!-- extend the tables to this value -->
+      <mdrun>
+       <command>
+         <!-- mpirun -np 8 gmx_mpi mdrun -->
+         gmx mdrun
+       </command>
+        <opts>
+		-v -nt 2 -tableb
+                table_b1.xvg table_b2.xvg table_b3.xvg table_b4.xvg table_b5.xvg
+                table_b6.xvg table_b7.xvg table_b8.xvg table_b9.xvg 
+		table_a21.xvg table_a22.xvg table_a23.xvg table_a24.xvg table_a25.xvg 
+		table_a26.xvg table_a27.xvg table_a28.xvg table_a29.xvg table_a30.xvg 
+		table_a31.xvg
+		table_d32.xvg table_d33.xvg table_d34.xvg table_d35.xvg table_d36.xvg
+		table_d37.xvg table_d38.xvg table_d39.xvg
+	</opts>
+      </mdrun>
+       <grompp>
+      <bin>
+     	 <!--mpirun -np 1 gmx_mpi grompp-->
+	 gmx grompp
+      </bin>
+   </grompp>
+      <rdf>
+        <topol>topol.tpr</topol>
+      </rdf>
+    </gromacs>
+
+    <simulation>
+      <tasks>
+        1
+      </tasks>
+    </simulation>
+
+    <!-- these files are copied for each new run -->
+    <filelist>
+	grompp.mdp topol.top index.ndx table.xvg fff_cg_CG.xml
+                table_b1.xvg table_b2.xvg table_b3.xvg table_b4.xvg table_b5.xvg
+                table_b6.xvg table_b7.xvg table_b8.xvg table_b9.xvg
+		table_d32.xvg table_d33.xvg table_d34.xvg table_d35.xvg table_d36.xvg
+		table_d37.xvg table_d38.xvg table_d39.xvg
+		table_AMD_AMD.xvg table_CAB_CAB.xvg table_CAB_NH3.xvg table_COO_COO.xvg
+		table_NH3_COO.xvg table_PHE_AMD.xvg table_PHE_COO.xvg table_PHE_PHE.xvg
+		table_CAB_AMD.xvg table_CAB_COO.xvg table_COO_AMD.xvg table_NH3_AMD.xvg
+		table_NH3_NH3.xvg table_PHE_CAB.xvg table_PHE_NH3.xvg
+                table_AMD_SOL.xvg table_CAB_SOL.xvg table_COO_SOL.xvg table_NH3_SOL.xvg
+		table_PHE_SOL.xvg table_SOL_SOL.xvg
+    </filelist>
+    <!-- do so many iterations -->
+    <iterations_max>10</iterations_max>
+    <!-- ibi: iterative boltzmann inversion -->
+    <method>ibi</method>
+    <!-- directory for user scripts -->
+    <scriptpath></scriptpath>
+    <!-- write log to this file -->
+    <log_file>inverse.log</log_file>
+    <!-- write restart step to this file -->
+    <restart_file>restart_points.log</restart_file>
+    
+    <map>
+     fff_cg_CG.xml
+    </map>
+  </inverse>
+
+</cg>
+
+

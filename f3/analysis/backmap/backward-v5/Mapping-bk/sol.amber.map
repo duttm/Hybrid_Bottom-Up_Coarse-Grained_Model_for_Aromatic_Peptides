@@ -1,0 +1,14 @@
+[ molecule ]
+SOL
+
+[ martini ]
+SOL
+
+[ mapping ]
+amber
+
+[ atoms ]
+    1    OW    SOL
+    2   HW1    SOL
+    3   HW2    SOL
+

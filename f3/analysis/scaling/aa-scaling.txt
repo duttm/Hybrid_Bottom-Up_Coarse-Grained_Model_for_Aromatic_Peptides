@@ -1,0 +1,8 @@
+model	cores	mpi-ranks	omp-threads	ns/day
+amber	1	1	1	16.138
+amber	2	2	1	30.533
+amber	4	4	1	55.622
+amber	8	8	1	97.963
+amber	16	16	1	179.54
+amber	32	32	1	
+amber	64	64	1	489.61

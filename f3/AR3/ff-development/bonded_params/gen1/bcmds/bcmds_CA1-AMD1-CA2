@@ -1,0 +1,8 @@
+tab set T 300
+tab set scale angle
+tab set auto 0
+tab set min 2.28
+tab set max 2.62
+tab set n 38
+tab CA1-AMD1-CA2.pot.ib *CA1-AMD1-CA2*
+q

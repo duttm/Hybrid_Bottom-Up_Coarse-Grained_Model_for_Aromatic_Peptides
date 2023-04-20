@@ -1,0 +1,8 @@
+tab set T 300
+tab set scale dihedral
+tab set auto 0
+tab set min -3.14
+tab set max 3.14
+tab set n 90
+tab CA1-PHA1-PHB1-PHC1.pot.ib *CA1-PHA1-PHB1-PHC1*
+q

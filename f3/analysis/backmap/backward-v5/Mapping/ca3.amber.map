@@ -1,0 +1,13 @@
+[ molecule ]
+CA3
+
+[ martini ]
+CA3
+
+[ mapping ]
+amber
+
+[ atoms ]
+    1    CA  CA3
+    2    HA  CA3
+   

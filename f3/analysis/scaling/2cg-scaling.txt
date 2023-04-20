@@ -1,0 +1,8 @@
+model	cores	mpi-ranks	omp-threads	ns/day
+2cg	1	1	1	14.953
+2cg	2	2	1	33.212
+2cg	4	4	1	55.35
+2cg	8	8	1	139.183
+2cg	16	16	1	186.463
+2cg	32	32	1	168.773
+2cg	64	64	1	598.053

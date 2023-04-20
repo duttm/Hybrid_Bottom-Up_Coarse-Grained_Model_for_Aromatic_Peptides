@@ -1,0 +1,42 @@
+[ molecule ]
+PHE3
+
+[ martini ]
+PHE3
+
+[ mapping ]
+amber
+
+[ atoms ]
+   1    CG  PHE3
+   2   CD1  PHE3
+   3   HD1  PHE3
+   4   CE1  PHE3
+   5   HE1  PHE3
+   6    CZ  PHE3
+   7    HZ  PHE3
+   8   CE2  PHE3
+   9   HE2  PHE3
+   10   CD2  PHE3
+   11   HD2  PHE3
+   
+[ out ]
+; Add some helper points
+P CD1 CD2 CZ
+Q CD2 CD1 CZ
+R CZ  CD1 CD2
+
+[ trans ]
+; Place hydrogens using helper points
+HD1   P CE1   R
+HD2   Q CE2   R
+HE1 CE1   P  CG
+HE2 CE2   Q  CG
+HZ    R CE1   P 
+
+[ out ]
+; Place ring carbons
+CD1 CE1 HE1 R
+CD2 CE2 HE2 R
+CZ  CE1 HE1 P
+

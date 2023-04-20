@@ -1,0 +1,412 @@
+<cg>
+<!--angles-->
+	<bonded>
+		<name>NH3-CA1-AMD1</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>NH3-CA1-AMD1.dist.tgt</target>
+			<gromacs>
+				<table>table_a1.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>CA1-AMD1-CA2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>CA1-AMD1-CA2.dist.tgt</target>
+			<gromacs>
+				<table>table_a2.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>AMD1-CA2-AMD2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>AMD1-CA2-AMD2.dist.tgt</target>
+			<gromacs>
+				<table>table_a3.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>CA2-AMD2-CA3</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>CA2-AMD2-CA3.dist.tgt</target>
+			<gromacs>
+				<table>table_a4.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>AMD2-CA3-COO</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>AMD2-CA3-COO.dist.tgt</target>
+			<gromacs>
+				<table>table_a5.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>NH3-CA1-PHA1</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>NH3-CA1-PHA1.dist.tgt</target>
+			<gromacs>
+				<table>table_a6.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>CA1-PHA1-PHB1</name>
+		<min>0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>CA1-PHA1-PHB1.dist.tgt</target>
+			<gromacs>
+				<table>table_a7.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>CA1-PHA1-PHC1</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>CA1-PHA1-PHC1.dist.tgt</target>
+			<gromacs>
+				<table>table_a8.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHA1-PHB1-PHC1</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHA1-PHB1-PHC1.dist.tgt</target>
+			<gromacs>
+				<table>table_a9.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHB1-PHC1-PHA1</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHB1-PHC1-PHA1.dist.tgt</target>
+			<gromacs>
+				<table>table_a10.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHC1-PHA1-PHB1</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHC1-PHA1-PHB1.dist.tgt</target>
+			<gromacs>
+				<table>table_a11.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>AMD1-CA1-PHA1</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>AMD1-CA1-PHA1.dist.tgt</target>
+			<gromacs>
+				<table>table_a12.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>AMD1-CA2-PHA2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>AMD1-CA2-PHA2.dist.tgt</target>
+			<gromacs>
+				<table>table_a13.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>CA2-PHA2-PHB2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>CA2-PHA2-PHB2.dist.tgt</target>
+			<gromacs>
+				<table>table_a14.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>CA2-PHA2-PHC2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>CA2-PHA2-PHC2.dist.tgt</target>
+			<gromacs>
+				<table>table_a15.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHA2-PHB2-PHC2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHA2-PHB2-PHC2.dist.tgt</target>
+			<gromacs>
+				<table>table_a16.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHB2-PHC2-PHA2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHB2-PHC2-PHA2.dist.tgt</target>
+			<gromacs>
+				<table>table_a17.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHC2-PHA2-PHB2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHC2-PHA2-PHB2.dist.tgt</target>
+			<gromacs>
+				<table>table_a18.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>AMD2-CA2-PHA2</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>AMD2-CA2-PHA2.dist.tgt</target>
+			<gromacs>
+				<table>table_a19.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>AMD2-CA3-PHA3</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>AMD2-CA3-PHA3.dist.tgt</target>
+			<gromacs>
+				<table>table_a20.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>CA3-PHA3-PHB3</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>CA3-PHA3-PHB3.dist.tgt</target>
+			<gromacs>
+				<table>table_a21.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>CA3-PHA3-PHC3</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>CA3-PHA3-PHC3.dist.tgt</target>
+			<gromacs>
+				<table>table_a22.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHA3-PHB3-PHC3</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHA3-PHB3-PHC3.dist.tgt</target>
+			<gromacs>
+				<table>table_a23.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHB3-PHC3-PHA3</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHB3-PHC3-PHA3.dist.tgt</target>
+			<gromacs>
+				<table>table_a24.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>PHC3-PHA3-PHB3</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>PHC3-PHA3-PHB3.dist.tgt</target>
+			<gromacs>
+				<table>table_a25.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+	<bonded>
+		<name>COO-CA3-PHA3</name>
+		<min>0.0</min>
+		<max>3.14</max>
+		<step>0.02</step>
+		<inverse>
+			<target>COO-CA3-PHA3.dist.tgt</target>
+			<gromacs>
+				<table>table_a26.xvg</table>
+			</gromacs>
+		</inverse>
+	</bonded>
+
+  <!-- general options for inverse script -->
+  <inverse>
+    <!-- 300*0.00831451 gromacs units -->
+    <kBT>2.49435</kBT>
+    <!-- use gromacs as simulation program -->
+    <program>gromacs</program>
+    <!-- gromacs specific options -->
+    <gromacs>
+      <!-- trash so many frames at the beginning -->
+      <equi_time>20</equi_time>
+      <!-- grid for table*.xvg !-->
+      <table_bins>5</table_bins>
+      <!-- cut the potential at this value (gromacs bug) -->
+      <pot_max>1000000</pot_max>
+      <!-- extend the tables to this value -->
+      <table_end>180</table_end>
+      <mdrun>
+       <command>
+         mpirun -np 1 gmx_mpi mdrun
+      	</command>
+        <opts>
+		    -v -ntomp 1	-tableb
+		    table_b1.xvg table_b2.xvg table_b3.xvg table_b4.xvg table_b5.xvg
+            table_b6.xvg table_b7.xvg table_b8.xvg table_b9.xvg table_b10.xvg
+            table_b11.xvg table_b12.xvg table_b13.xvg table_b14.xvg table_b15.xvg
+            table_b16.xvg table_b17.xvg table_b18.xvg
+		    table_a1.xvg table_a2.xvg table_a3.xvg table_a4.xvg table_a5.xvg 
+		    table_a6.xvg table_a7.xvg table_a8.xvg table_a9.xvg table_a10.xvg 
+            table_a11.xvg table_a12.xvg table_a13.xvg table_a14.xvg table_a15.xvg
+            table_a16.xvg table_a17.xvg table_a18.xvg table_a19.xvg table_a20.xvg 
+            table_a21.xvg table_a22.xvg table_a23.xvg table_a24.xvg table_a25.xvg
+            table_a26.xvg 
+            table_d1.xvg table_d2.xvg table_d3.xvg table_d4.xvg table_d5.xvg
+            table_d6.xvg table_d7.xvg table_d8.xvg table_d9.xvg table_d10.xvg
+            table_d11.xvg table_d12.xvg table_d13.xvg table_d14.xvg table_d15.xvg
+            table_d16.xvg table_d17.xvg table_d18.xvg table_d19.xvg table_d20.xvg
+            table_d21.xvg table_d22.xvg table_d23.xvg table_d24.xvg table_d25.xvg
+            table_d26.xvg table_d27.xvg table_d28.xvg table_d29.xvg
+
+		    
+		</opts>
+      </mdrun>
+       <grompp>
+      <bin>
+     	 mpirun -np 1 gmx_mpi grompp
+      </bin>
+   </grompp>
+      <rdf>
+        <topol>topol.tpr</topol>
+      </rdf>
+    </gromacs>
+
+    <simulation>
+      <tasks>
+        1
+      </tasks>
+    </simulation>
+    <!-- these files are copied for each new run -->
+    <filelist>
+    	grompp.mdp topol.top table.xvg table_SOL_SOL.xvg index.ndx second_cg_CG.xml
+	        table_b1.xvg table_b2.xvg table_b3.xvg table_b4.xvg table_b5.xvg
+            table_b6.xvg table_b7.xvg table_b8.xvg table_b9.xvg table_b10.xvg
+            table_b11.xvg table_b12.xvg table_b13.xvg table_b14.xvg table_b15.xvg
+            table_b16.xvg table_b17.xvg table_b18.xvg
+            table_d1.xvg table_d2.xvg table_d3.xvg table_d4.xvg table_d5.xvg
+            table_d6.xvg table_d7.xvg table_d8.xvg table_d9.xvg table_d10.xvg
+            table_d11.xvg table_d12.xvg table_d13.xvg table_d14.xvg table_d15.xvg
+            table_d16.xvg table_d17.xvg table_d18.xvg table_d19.xvg table_d20.xvg
+            table_d21.xvg table_d22.xvg table_d23.xvg table_d24.xvg table_d25.xvg
+            table_d26.xvg table_d27.xvg table_d28.xvg table_d29.xvg
+                table_NH3_NH3.xvg table_NH3_CA.xvg table_NH3_AMD.xvg table_NH3_PHA.xvg
+            table_NH3_PHB.xvg table_NH3_PHC.xvg table_NH3_COO.xvg table_CA_CA.xvg table_CA_AMD.xvg
+            table_CA_PHA.xvg table_CA_PHB.xvg table_CA_PHC.xvg table_CA_COO.xvg table_AMD_AMD.xvg
+            table_AMD_PHA.xvg table_AMD_PHB.xvg table_AMD_PHC.xvg table_AMD_COO.xvg table_PHA_PHA.xvg
+            table_PHA_PHB.xvg table_PHA_PHC.xvg table_PHA_COO.xvg table_PHB_PHB.xvg table_PHB_PHC.xvg
+            table_PHB_COO.xvg table_PHC_PHC.xvg table_PHC_COO.xvg table_COO_COO.xvg    
+                table_NH3_SOL.xvg table_CA_SOL.xvg table_AMD_SOL.xvg table_PHA_SOL.xvg table_PHB_SOL.xvg 
+            table_PHC_SOL.xvg table_COO_SOL.xvg  	
+    </filelist>
+    <!-- do so many iterations -->
+    <iterations_max>10</iterations_max>
+    <!-- ibi: iterative boltzmann inversion -->
+    <method>ibi</method>
+    <!-- directory for user scripts -->
+    <scriptpath></scriptpath>
+    <!-- write log to this file -->
+    <log_file>inverse.log</log_file>
+    <!-- write restart step to this file -->
+    <restart_file>restart_points.log</restart_file>
+
+    <map>
+     second_cg_CG.xml
+    </map>
+
+  </inverse>
+
+</cg>
