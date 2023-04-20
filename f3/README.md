@@ -14,7 +14,7 @@ Our coarse-graining workflow is:
     - [AR1 simulation](AR1/simulations)
     - [AR3 simulation](AR3/simulations)
 
-4. [CG Analysis](analysiis) : We analyze local and overall properties of the CG model. For example, we compare the end-to-end distance of the peptide across AA and CG resolutions. 
+4. [CG Analysis](analysis) : We analyze local and overall properties of the CG model. For example, we compare the end-to-end distance of the peptide across AA and CG resolutions. 
 
 ## Issues and Support
 
