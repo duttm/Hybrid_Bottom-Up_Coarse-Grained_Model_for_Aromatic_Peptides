@@ -4,7 +4,7 @@
 # General script to be used for 200ns runs.
 # Usually change "fff" to e.g. "fff16" for 16 peptides. 
 
-#SBATCH --mail-user=mh1314@scarletmail.rutgers.edu
+#SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 #SBATCH --job-name=bridges_fff_aa_200
 #SBATCH --partition RM

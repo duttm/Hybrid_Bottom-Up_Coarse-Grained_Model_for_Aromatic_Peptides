@@ -1,97 +1,0 @@
-begin to calculate distribution functions
-# of bonded interactions: 45
-# of non-bonded interactions: 21
-Reading file ../topol.tpr, VERSION 2018 (single precision)
-Note: file tpx version 112, software tpx version 116
-I have 2153 beads in 2144 molecules
-I have 2153 beads in 2144 molecules for the coarsegraining
-Reading file ../topol.tpr, VERSION 2018 (single precision)
-Note: file tpx version 112, software tpx version 116
-Reading file ../topol.tpr, VERSION 2018 (single precision)
-Note: file tpx version 112, software tpx version 116
-Reading file ../topol.tpr, VERSION 2018 (single precision)
-Note: file tpx version 112, software tpx version 116
-Reading file ../topol.tpr, VERSION 2018 (single precision)
-Note: file tpx version 112, software tpx version 116
-Reading file ../topol.tpr, VERSION 2018 (single precision)
-Note: file tpx version 112, software tpx version 116
-Reading file ../topol.tpr, VERSION 2018 (single precision)
-Note: file tpx version 112, software tpx version 116
-Reading file ../topol.tpr, VERSION 2018 (single precision)
-Note: file tpx version 112, software tpx version 116
-Reading frame       0 time    0.000   
-Reading frame       1 time    0.100   Reading frame       2 time    0.200   Reading frame       3 time    0.300   Reading frame       4 time    0.400   Reading frame       5 time    0.500   Reading frame       6 time    0.600   Reading frame       7 time    0.700   Reading frame       8 time    0.800   Reading frame       9 time    0.900   Reading frame      10 time    1.000   Reading frame      11 time    1.100   Reading frame      12 time    1.200   Reading frame      13 time    1.300   Reading frame      14 time    1.400   Reading frame      15 time    1.500   Reading frame      16 time    1.600   Reading frame      17 time    1.700   Reading frame      18 time    1.800   Reading frame      19 time    1.900   Reading frame      20 time    2.000   Reading frame      30 time    3.000   Reading frame      40 time    4.000   Reading frame      50 time    5.000   Reading frame      60 time    6.000   Reading frame      70 time    7.000   Reading frame      80 time    8.000   Reading frame      90 time    9.000   Reading frame     100 time   10.000   Reading frame     110 time   11.000   Reading frame     120 time   12.000   Reading frame     130 time   13.000   Reading frame     140 time   14.000   Reading frame     150 time   15.000   Reading frame     160 time   16.000   Reading frame     170 time   17.000   Reading frame     180 time   18.000   Reading frame     190 time   19.000   Reading frame     200 time   20.000   Reading frame     300 time   30.000   Reading frame     400 time   40.000   Reading frame     500 time   50.000   Reading frame     600 time   60.000   Reading frame     700 time   70.000   Reading frame     800 time   80.000   Reading frame     900 time   90.000   Reading frame    1000 time  100.000   Reading frame    1100 time  110.000   Reading frame    1200 time  120.000   Reading frame    1300 time  130.000   Reading frame    1400 time  140.000   Reading frame    1500 time  150.000   Reading frame    1600 time  160.000   Reading frame    1700 time  170.000   Reading frame    1800 time  180.000   Reading frame    1900 time  190.000   Reading frame    2000 time  200.000   Reading frame    3000 time  300.000   Reading frame    4000 time  400.000   Reading frame    5000 time  500.000   Reading frame    6000 time  600.000   Reading frame    7000 time  700.000   Reading frame    8000 time  800.000   Reading frame    9000 time  900.000   Reading frame   10000 time 1000.000   Reading frame   11000 time 1100.000   Reading frame   12000 time 1200.000   Reading frame   13000 time 1300.000   Reading frame   14000 time 1400.000   Reading frame   15000 time 1500.000   Reading frame   16000 time 1600.000   Reading frame   17000 time 1700.000   Reading frame   18000 time 1800.000   Reading frame   19000 time 1900.000   Reading frame   20000 time 2000.000   Reading frame   21000 time 2100.000   Reading frame   22000 time 2200.000   Reading frame   23000 time 2300.000   Reading frame   24000 time 2400.000   Reading frame   25000 time 2500.000   Reading frame   26000 time 2600.000   Reading frame   27000 time 2700.000   Reading frame   28000 time 2800.000   Reading frame   29000 time 2900.000   Reading frame   30000 time 3000.000   Reading frame   31000 time 3100.000   Reading frame   32000 time 3200.000   Reading frame   33000 time 3300.000   Reading frame   34000 time 3400.000   Reading frame   35000 time 3500.000   Reading frame   36000 time 3600.000   Reading frame   37000 time 3700.000   Reading frame   38000 time 3800.000   Reading frame   39000 time 3900.000   Reading frame   40000 time 4000.000   Reading frame   41000 time 4100.000   Reading frame   42000 time 4200.000   Reading frame   43000 time 4300.000   Reading frame   44000 time 4400.000   Reading frame   45000 time 4500.000   Reading frame   46000 time 4600.000   Reading frame   47000 time 4700.000   Reading frame   48000 time 4800.000   Reading frame   49000 time 4900.000   Reading frame   50000 time 5000.000   Reading frame   51000 time 5100.000   Reading frame   52000 time 5200.000   Reading frame   53000 time 5300.000   Reading frame   54000 time 5400.000   Reading frame   55000 time 5500.000   Reading frame   56000 time 5600.000   Reading frame   57000 time 5700.000   Reading frame   58000 time 5800.000   Reading frame   59000 time 5900.000   Reading frame   60000 time 6000.000   Reading frame   61000 time 6100.000   Reading frame   62000 time 6200.000   Reading frame   63000 time 6300.000   Reading frame   64000 time 6400.000   Reading frame   65000 time 6500.000   Reading frame   66000 time 6600.000   Reading frame   67000 time 6700.000   Reading frame   68000 time 6800.000   Reading frame   69000 time 6900.000   Reading frame   70000 time 7000.000   Reading frame   71000 time 7100.000   Reading frame   72000 time 7200.000   Reading frame   73000 time 7300.000   Reading frame   74000 time 7400.000   Reading frame   75000 time 7500.000   Reading frame   76000 time 7600.000   Reading frame   77000 time 7700.000   Reading frame   78000 time 7800.000   Reading frame   79000 time 7900.000   Reading frame   80000 time 8000.000   Reading frame   81000 time 8100.000   Reading frame   82000 time 8200.000   Reading frame   83000 time 8300.000   Reading frame   84000 time 8400.000   Reading frame   85000 time 8500.000   Reading frame   86000 time 8600.000   Reading frame   87000 time 8700.000   Reading frame   88000 time 8800.000   Reading frame   89000 time 8900.000   Reading frame   90000 time 9000.000   Reading frame   91000 time 9100.000   Reading frame   92000 time 9200.000   Reading frame   93000 time 9300.000   Reading frame   94000 time 9400.000   Reading frame   95000 time 9500.000   Reading frame   96000 time 9600.000   Reading frame   97000 time 9700.000   Reading frame   98000 time 9800.000   Reading frame   99000 time 9900.000   Reading frame  100000 time 10000.000   Reading frame  101000 time 10100.000   Reading frame  102000 time 10200.000   Reading frame  103000 time 10300.000   Reading frame  104000 time 10400.000   Reading frame  105000 time 10500.000   Reading frame  106000 time 10600.000   Reading frame  107000 time 10700.000   Reading frame  108000 time 10800.000   Reading frame  109000 time 10900.000   Reading frame  110000 time 11000.000   Reading frame  111000 time 11100.000   Reading frame  112000 time 11200.000   Reading frame  113000 time 11300.000   Reading frame  114000 time 11400.000   Reading frame  115000 time 11500.000   Reading frame  116000 time 11600.000   Reading frame  117000 time 11700.000   Reading frame  118000 time 11800.000   Reading frame  119000 time 11900.000   Reading frame  120000 time 12000.000   Reading frame  121000 time 12100.000   Reading frame  122000 time 12200.000   Reading frame  123000 time 12300.000   Reading frame  124000 time 12400.000   Reading frame  125000 time 12500.000   Reading frame  126000 time 12600.000   Reading frame  127000 time 12700.000   Reading frame  128000 time 12800.000   Reading frame  129000 time 12900.000   Reading frame  130000 time 13000.000   Reading frame  131000 time 13100.000   Reading frame  132000 time 13200.000   Reading frame  133000 time 13300.000   Reading frame  134000 time 13400.000   Reading frame  135000 time 13500.000   Reading frame  136000 time 13600.000   Reading frame  137000 time 13700.000   Reading frame  138000 time 13800.000   Reading frame  139000 time 13900.000   Reading frame  140000 time 14000.000   Reading frame  141000 time 14100.000   Reading frame  142000 time 14200.000   Reading frame  143000 time 14300.000   Reading frame  144000 time 14400.000   Reading frame  145000 time 14500.000   Reading frame  146000 time 14600.000   Reading frame  147000 time 14700.000   Reading frame  148000 time 14800.000   Reading frame  149000 time 14900.000   Reading frame  150000 time 15000.000   Reading frame  151000 time 15100.000   Reading frame  152000 time 15200.000   Reading frame  153000 time 15300.000   Reading frame  154000 time 15400.000   Reading frame  155000 time 15500.000   Reading frame  156000 time 15600.000   Reading frame  157000 time 15700.000   Reading frame  158000 time 15800.000   Reading frame  159000 time 15900.000   Reading frame  160000 time 16000.000   Reading frame  161000 time 16100.000   Reading frame  162000 time 16200.000   Reading frame  163000 time 16300.000   Reading frame  164000 time 16400.000   Reading frame  165000 time 16500.000   Reading frame  166000 time 16600.000   Reading frame  167000 time 16700.000   Reading frame  168000 time 16800.000   Reading frame  169000 time 16900.000   Reading frame  170000 time 17000.000   Reading frame  171000 time 17100.000   Reading frame  172000 time 17200.000   Reading frame  173000 time 17300.000   Reading frame  174000 time 17400.000   Reading frame  175000 time 17500.000   Reading frame  176000 time 17600.000   Reading frame  177000 time 17700.000   Reading frame  178000 time 17800.000   Reading frame  179000 time 17900.000   Reading frame  180000 time 18000.000   Reading frame  181000 time 18100.000   Reading frame  182000 time 18200.000   Reading frame  183000 time 18300.000   Reading frame  184000 time 18400.000   Reading frame  185000 time 18500.000   Reading frame  186000 time 18600.000   Reading frame  187000 time 18700.000   Reading frame  188000 time 18800.000   Reading frame  189000 time 18900.000   Reading frame  190000 time 19000.000   Reading frame  191000 time 19100.000   Reading frame  192000 time 19200.000   Reading frame  193000 time 19300.000   Reading frame  194000 time 19400.000   Reading frame  195000 time 19500.000   Reading frame  196000 time 19600.000   Reading frame  197000 time 19700.000   Reading frame  198000 time 19800.000   Reading frame  199000 time 19900.000   Reading frame  200000 time 20000.000   Last frame     200000 time 20000.000   
-Last frame     200000 time 20000.000   
-Last frame     200000 time 20000.000   
-Last frame     200000 time 20000.000   
-Last frame     200000 time 20000.000   
-Last frame     200000 time 20000.000   
-Last frame     200000 time 20000.000   
-Last frame     200000 time 20000.000   
-
-written A1B2.dist.new
-written A1B2A2.dist.new
-written A1B2A2B3.dist.new
-written A1B2F2.dist.new
-written A2B3.dist.new
-written A2B3C.dist.new
-written A2B3F3.dist.new
-written AMD-AMD.dist.new
-written AMD-SOL.dist.new
-written B1A1.dist.new
-written B1A1B2.dist.new
-written B1A1B2A2.dist.new
-written B1A1B2F2.dist.new
-written B2A2.dist.new
-written B2A2B3.dist.new
-written B2A2B3C.dist.new
-written B2A2B3F3.dist.new
-written B2F2.dist.new
-written B3C.dist.new
-written B3F3.dist.new
-written CAB-AMD.dist.new
-written CAB-CAB.dist.new
-written CAB-COO.dist.new
-written CAB-NH3.dist.new
-written CAB-SOL.dist.new
-written COO-AMD.dist.new
-written COO-COO.dist.new
-written COO-SOL.dist.new
-written F1B1.dist.new
-written F1B1A1.dist.new
-written F1B1A1B2.dist.new
-written F1B1N.dist.new
-written F2B2A2.dist.new
-written F2B2A2B3.dist.new
-written F3B3C.dist.new
-written NB1.dist.new
-written NB1A1.dist.new
-written NB1A1B2.dist.new
-written NH3-AMD.dist.new
-written NH3-COO.dist.new
-written NH3-NH3.dist.new
-written NH3-SOL.dist.new
-written PHE-AMD.dist.new
-written PHE-CAB.dist.new
-written PHE-COO.dist.new
-written PHE-NH3.dist.new
-written PHE-PHE.dist.new
-written PHE-SOL.dist.new
-written SOL-SOL.dist.new
-written a1351.dist.new
-written a1352.dist.new
-written a1353.dist.new
-written a1354.dist.new
-written a1355.dist.new
-written a1356.dist.new
-written a1357.dist.new
-written a1358.dist.new
-written b151.dist.new
-written b152.dist.new
-written b153.dist.new
-written b154.dist.new
-written b155.dist.new
-written b156.dist.new
-written b157.dist.new
-written b158.dist.new
-written end.dist.new

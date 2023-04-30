@@ -35,4 +35,4 @@ gmx mdrun -v -deffnm nvt
 gmx grompp -f npt.mdp -c nvt.gro -r nvt.gro -t nvt.cpt -p topol.top -o npt.tpr
 gmx mdrun -v -deffnm npt
 
-rsync -Pazh ../fff$NMOL hooten@bridges2.psc.edu:/ocean/projects/dmr170002p/hooten/
+

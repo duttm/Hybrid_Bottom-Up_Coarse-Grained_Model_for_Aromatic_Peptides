@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --mail-user=mh1314@scarletmail.rutgers.edu
+#SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 #SBATCH --job-name=cg16_200
 #SBATCH --partition RM-shared
