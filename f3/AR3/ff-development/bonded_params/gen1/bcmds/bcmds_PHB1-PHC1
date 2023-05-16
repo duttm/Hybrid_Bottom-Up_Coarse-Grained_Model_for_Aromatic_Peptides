@@ -1,8 +1,0 @@
-tab set T 300
-tab set scale bond
-tab set auto 0
-tab set min .214
-tab set max .23
-tab set n 18
-tab PHB1-PHC1.pot.ib *PHB1-PHC1*
-q

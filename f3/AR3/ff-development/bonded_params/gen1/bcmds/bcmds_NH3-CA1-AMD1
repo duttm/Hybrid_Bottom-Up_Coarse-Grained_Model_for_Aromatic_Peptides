@@ -1,8 +1,0 @@
-tab set T 300
-tab set scale angle
-tab set auto 0
-tab set min 1.74
-tab set max 2.04
-tab set n 32
-tab NH3-CA1-AMD1.pot.ib *NH3-CA1-AMD1*
-q

@@ -1,8 +1,0 @@
-tab set T 300
-tab set scale bond
-tab set auto 0
-tab set min .194
-tab set max .228
-tab set n 36
-tab AMD1-CA2.pot.ib *AMD1-CA2*
-q

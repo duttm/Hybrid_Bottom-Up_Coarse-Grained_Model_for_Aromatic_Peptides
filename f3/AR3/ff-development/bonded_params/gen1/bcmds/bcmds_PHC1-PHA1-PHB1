@@ -1,8 +1,0 @@
-tab set T 300
-tab set scale angle
-tab set auto 0
-tab set min .8
-tab set max .9
-tab set n 12
-tab PHC1-PHA1-PHB1.pot.ib *PHC1-PHA1-PHB1*
-q
