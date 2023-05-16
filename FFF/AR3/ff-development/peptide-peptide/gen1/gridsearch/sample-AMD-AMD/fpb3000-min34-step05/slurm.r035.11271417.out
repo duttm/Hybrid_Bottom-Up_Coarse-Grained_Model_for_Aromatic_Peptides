@@ -1,0 +1,123 @@
+equi = 399999
+Running force matching
+Reading file topol_fm.tpr, VERSION 2018 (single precision)
+Note: file tpx version 112, software tpx version 116
+I have 6294 beads in 1598 molecules
+I have 1973 beads in 1598 molecules for the coarsegraining
+trr version: GMX_trn_file (single precision)
+Reading frame       0 time 400000.000   
+a: 0.37 ,sigma: 1 ,gamma: 0.12
+Number of spline functions for the interaction AMD-AMD:17
+
+You are using VOTCA!
+
+hey, somebody wants to forcematch!
+
+Using constrained Least Squares!
+ 
+Reading frame       1 time 400002.000   Reading frame       2 time 400004.000   Reading frame       3 time 400006.000   Reading frame       4 time 400008.000   Reading frame       5 time 400010.000   Reading frame       6 time 400012.000   Reading frame       7 time 400014.000   Reading frame       8 time 400016.000   Reading frame       9 time 400018.000   Reading frame      10 time 400020.000   Reading frame      11 time 400022.000   Reading frame      12 time 400024.000   Reading frame      13 time 400026.000   Reading frame      14 time 400028.000   Reading frame      15 time 400030.000   Reading frame      16 time 400032.000   Reading frame      17 time 400034.000   Reading frame      18 time 400036.000   Reading frame      19 time 400038.000   Reading frame      20 time 400040.000   Reading frame      30 time 400060.000   Reading frame      40 time 400080.000   Reading frame      50 time 400100.000   Reading frame      60 time 400120.000   Reading frame      70 time 400140.000   Reading frame      80 time 400160.000   Reading frame      90 time 400180.000   Reading frame     100 time 400200.000   Reading frame     110 time 400220.000   Reading frame     120 time 400240.000   Reading frame     130 time 400260.000   Reading frame     140 time 400280.000   Reading frame     150 time 400300.000   Reading frame     160 time 400320.000   Reading frame     170 time 400340.000   Reading frame     180 time 400360.000   Reading frame     190 time 400380.000   Reading frame     200 time 400400.000   Reading frame     300 time 400600.000   Reading frame     400 time 400800.000   Reading frame     500 time 401000.000   Reading frame     600 time 401200.000   Reading frame     700 time 401400.000   Reading frame     800 time 401600.000   Reading frame     900 time 401800.000   Reading frame    1000 time 402000.000   Reading frame    1100 time 402200.000   Reading frame    1200 time 402400.000   Reading frame    1300 time 402600.000   Reading frame    1400 time 402800.000   Reading frame    1500 time 403000.000   Reading frame    1600 time 403200.000   Reading frame    1700 time 403400.000   Reading frame    1800 time 403600.000   Reading frame    1900 time 403800.000   Reading frame    2000 time 404000.000   This should be a number: 6.77039 
+
+Block No1 done!
+Updating file: AMD-AMD.force
+Reading frame    3000 time 406000.000   Reading frame    4000 time 408000.000   Reading frame    5000 time 410000.000   This should be a number: 6.36839 
+
+Block No2 done!
+Updating file: AMD-AMD.force
+Reading frame    6000 time 412000.000   Reading frame    7000 time 414000.000   Reading frame    8000 time 416000.000   This should be a number: 8.13229 
+
+Block No3 done!
+Updating file: AMD-AMD.force
+Reading frame    9000 time 418000.000   Reading frame   10000 time 420000.000   Reading frame   11000 time 422000.000   This should be a number: 4.85891 
+
+Block No4 done!
+Updating file: AMD-AMD.force
+Reading frame   12000 time 424000.000   Reading frame   13000 time 426000.000   Reading frame   14000 time 428000.000   This should be a number: 17.4055 
+
+Block No5 done!
+Updating file: AMD-AMD.force
+Reading frame   15000 time 430000.000   Reading frame   16000 time 432000.000   Reading frame   17000 time 434000.000   This should be a number: 20.0269 
+
+Block No6 done!
+Updating file: AMD-AMD.force
+Reading frame   18000 time 436000.000   Reading frame   19000 time 438000.000   Reading frame   20000 time 440000.000   This should be a number: 29.7099 
+
+Block No7 done!
+Updating file: AMD-AMD.force
+Reading frame   21000 time 442000.000   Reading frame   22000 time 444000.000   Reading frame   23000 time 446000.000   This should be a number: 25.4885 
+
+Block No8 done!
+Updating file: AMD-AMD.force
+Reading frame   24000 time 448000.000   Reading frame   25000 time 450000.000   Reading frame   26000 time 452000.000   This should be a number: 20.6347 
+
+Block No9 done!
+Updating file: AMD-AMD.force
+Reading frame   27000 time 454000.000   Reading frame   28000 time 456000.000   Reading frame   29000 time 458000.000   This should be a number: 21.2119 
+
+Block No10 done!
+Updating file: AMD-AMD.force
+Reading frame   30000 time 460000.000   Reading frame   31000 time 462000.000   Reading frame   32000 time 464000.000   This should be a number: 12.8138 
+
+Block No11 done!
+Updating file: AMD-AMD.force
+Reading frame   33000 time 466000.000   Reading frame   34000 time 468000.000   Reading frame   35000 time 470000.000   This should be a number: 1.21886 
+
+Block No12 done!
+Updating file: AMD-AMD.force
+Reading frame   36000 time 472000.000   Reading frame   37000 time 474000.000   Reading frame   38000 time 476000.000   This should be a number: 6.63769 
+
+Block No13 done!
+Updating file: AMD-AMD.force
+Reading frame   39000 time 478000.000   Reading frame   40000 time 480000.000   Reading frame   41000 time 482000.000   This should be a number: -6.4617 
+
+Block No14 done!
+Updating file: AMD-AMD.force
+Reading frame   42000 time 484000.000   Reading frame   43000 time 486000.000   Reading frame   44000 time 488000.000   This should be a number: -7.5874 
+
+Block No15 done!
+Updating file: AMD-AMD.force
+Reading frame   45000 time 490000.000   Reading frame   46000 time 492000.000   Reading frame   47000 time 494000.000   This should be a number: -6.27013 
+
+Block No16 done!
+Updating file: AMD-AMD.force
+Reading frame   48000 time 496000.000   Reading frame   49000 time 498000.000   Reading frame   50000 time 500000.000   Last frame      50000 time 500000.000   
+
+We are done, thank you very much!
+Running subscript 'table_integrate.pl AMD-AMD.force AMD-AMD.pot' (from tags table integrate) dir /usr/share/votca/scripts/inverse
+Running subscript 'table_linearop.pl AMD-AMD.pot AMD-AMD.pot -1 0' (from tags table linearop) dir /usr/share/votca/scripts/inverse
+table_linearop.pl: AMD-AMD.pot to AMD-AMD.pot with y' = -1*y + 0 
+csg_get_property: No value for 'cg.inverse.scriptpath' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: No value for 'cg.inverse.program' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: value for 'cg.inverse.program' from /usr/share/votca/xml/csg_defaults.xml: gromacs
+csg_get_property: returning emtpy value for 'cg.inverse.scriptpath'
+csg_get_property: No value for 'cg.inverse.program' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: value for 'cg.inverse.program' from /usr/share/votca/xml/csg_defaults.xml: gromacs
+We are using Sim Program: gromacs
+csg_get_property: No value for 'cg.inverse.gromacs.gmxrc' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: No value for 'cg.inverse.program' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: value for 'cg.inverse.program' from /usr/share/votca/xml/csg_defaults.xml: gromacs
+csg_get_property: returning emtpy value for 'cg.inverse.gromacs.gmxrc'
+Running subscript 'potential_to_gromacs.sh --clean input_AMD-AMD.pot table_AMD-AMD.xvg' (from tags convert_potential gromacs) dir /usr/share/votca/scripts/inverse
+Convert input_AMD-AMD.pot to table_AMD-AMD.xvg
+csg_get_property: No value for 'cg.inverse.gromacs.mdp' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: No value for 'cg.inverse.program' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: value for 'cg.inverse.program' from /usr/share/votca/xml/csg_defaults.xml: gromacs
+csg_get_property: value for 'cg.inverse.gromacs.mdp' from /usr/share/votca/xml/csg_defaults.xml: grompp.mdp
+Running critical command 'mktemp input_AMD-AMD.pot.smooth.XXXXX'
+Running critical command 'csg_resample --in input_AMD-AMD.pot --out input_AMD-AMD.pot.smooth.QD6kf --grid 0:0.010:1.2'
+Running critical command 'mktemp input_AMD-AMD.pot.extrapol.XXXXX'
+Running subscript 'potential_extrapolate.sh --clean --type non-bonded input_AMD-AMD.pot.smooth.QD6kf input_AMD-AMD.pot.extrapol.kTdhH' (from tags potential extrapolate) dir /usr/share/votca/scripts/inverse
+Extrapolate input_AMD-AMD.pot.smooth.QD6kf to input_AMD-AMD.pot.extrapol.kTdhH
+Running critical command 'mktemp input_AMD-AMD.pot.smooth.QD6kf.onlyleft.XXXXX'
+Running subscript 'table_extrapolate.pl --function exponential --avgpoints 3 --region left input_AMD-AMD.pot.smooth.QD6kf input_AMD-AMD.pot.smooth.QD6kf.onlyleft.NGhIM' (from tags table extrapolate) dir /usr/share/votca/scripts/inverse
+table_extrapolate.pl: extrapolating the left using exponential with gradient -210.1939561
+Running subscript 'table_extrapolate.pl --function constant --avgpoints 1 --region right input_AMD-AMD.pot.smooth.QD6kf.onlyleft.NGhIM input_AMD-AMD.pot.extrapol.kTdhH' (from tags table extrapolate) dir /usr/share/votca/scripts/inverse
+table_extrapolate.pl: extrapolating the right using constant with gradient 0
+Running critical command 'mktemp input_AMD-AMD.pot.interpol.XXXXX'
+Running critical command 'csg_resample --in input_AMD-AMD.pot.extrapol.kTdhH --out input_AMD-AMD.pot.interpol.bDs1P --grid 0:0.001:1.2 --comment Created on Thu Sep 22 22:24:24 EDT 2022 by hooten@r035
+called from potential_to_gromacs.sh, version 1.6.4 
+settings file: '/ocean/projects/dmr170002p/hooten/fff/second_cg/forcefield/peptide-peptide/gen1/gridsearch/AMD-AMD/fpb3000-min34-step05/settings_FM_AMD-AMD.xml'
+working directory: /ocean/projects/dmr170002p/hooten/fff/second_cg/forcefield/peptide-peptide/gen1/gridsearch/AMD-AMD/fpb3000-min34-step05
+Comments from /ocean/projects/dmr170002p/hooten/fff/second_cg/forcefield/peptide-peptide/gen1/gridsearch/AMD-AMD/fpb3000-min34-step05/input_AMD-AMD.pot:\ntable_linearop.pl: AMD-AMD.pot -> AMD-AMD.pot y' = -1*y + 0'
+Running critical command 'mktemp input_AMD-AMD.pot.shift.XXXXX'
+Running subscript 'potential_shift.pl --type non-bonded input_AMD-AMD.pot.interpol.bDs1P input_AMD-AMD.pot.shift.3vkoU' (from tags potential shift) dir /usr/share/votca/scripts/inverse
+Running subscript 'table_to_xvg.pl --max 1000000 --type non-bonded input_AMD-AMD.pot.shift.3vkoU table_AMD-AMD.xvg' (from tags convert_potential xvg) dir /usr/share/votca/scripts/inverse

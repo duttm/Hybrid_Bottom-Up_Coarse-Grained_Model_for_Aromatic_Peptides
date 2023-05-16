@@ -1,0 +1,11 @@
+tab set T 300
+
+tab set scale bond
+tab set auto 0
+tab set min 0.214
+tab set max 0.258
+tab set n 20
+tab B2A2.pot.ib *B2A2*
+
+
+q

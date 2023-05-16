@@ -1,0 +1,82 @@
+equi = 399999
+Running force matching
+Reading file topol_fm.tpr, VERSION 2018 (single precision)
+Note: file tpx version 112, software tpx version 116
+I have 6294 beads in 1598 molecules
+I have 1973 beads in 1598 molecules for the coarsegraining
+trr version: GMX_trn_file (single precision)
+Reading frame       0 time 400000.000   
+a: 0.37 ,sigma: 1 ,gamma: 0.12
+Number of spline functions for the interaction AMD-AMD:19
+
+You are using VOTCA!
+
+hey, somebody wants to forcematch!
+
+Using constrained Least Squares!
+ 
+Reading frame       1 time 400002.000   Reading frame       2 time 400004.000   Reading frame       3 time 400006.000   Reading frame       4 time 400008.000   Reading frame       5 time 400010.000   Reading frame       6 time 400012.000   Reading frame       7 time 400014.000   Reading frame       8 time 400016.000   Reading frame       9 time 400018.000   Reading frame      10 time 400020.000   Reading frame      11 time 400022.000   Reading frame      12 time 400024.000   Reading frame      13 time 400026.000   Reading frame      14 time 400028.000   Reading frame      15 time 400030.000   Reading frame      16 time 400032.000   Reading frame      17 time 400034.000   Reading frame      18 time 400036.000   Reading frame      19 time 400038.000   Reading frame      20 time 400040.000   Reading frame      30 time 400060.000   Reading frame      40 time 400080.000   Reading frame      50 time 400100.000   Reading frame      60 time 400120.000   Reading frame      70 time 400140.000   Reading frame      80 time 400160.000   Reading frame      90 time 400180.000   Reading frame     100 time 400200.000   Reading frame     110 time 400220.000   Reading frame     120 time 400240.000   Reading frame     130 time 400260.000   Reading frame     140 time 400280.000   Reading frame     150 time 400300.000   Reading frame     160 time 400320.000   Reading frame     170 time 400340.000   Reading frame     180 time 400360.000   Reading frame     190 time 400380.000   Reading frame     200 time 400400.000   Reading frame     300 time 400600.000   Reading frame     400 time 400800.000   Reading frame     500 time 401000.000   Reading frame     600 time 401200.000   Reading frame     700 time 401400.000   Reading frame     800 time 401600.000   Reading frame     900 time 401800.000   Reading frame    1000 time 402000.000   Reading frame    1100 time 402200.000   Reading frame    1200 time 402400.000   Reading frame    1300 time 402600.000   Reading frame    1400 time 402800.000   Reading frame    1500 time 403000.000   Reading frame    1600 time 403200.000   Reading frame    1700 time 403400.000   Reading frame    1800 time 403600.000   Reading frame    1900 time 403800.000   terminate called after throwing an instance of 'std::runtime_error'
+  what():  constrained_qrsolve_zero_column_in_matrix
+/var/spool/slurm/d/job11270490/slurm_script: line 21: 24415 Aborted                 (core dumped) csg_fmatch -v --top topol_fm.tpr --trj traj.trr --options settings_FM_AMD-AMD.xml --cg "second_cg.xml;water.xml"
+Running subscript 'table_integrate.pl AMD-AMD.force AMD-AMD.pot' (from tags table integrate) dir /usr/share/votca/scripts/inverse
+readin_table: could not open file AMD-AMD.force
+
+Callstack:
+/usr/bin/csg_call - linenumber 199
+    do_external - linenumber 177 in /usr/share/votca/scripts/inverse/functions_common.sh
+        die - linenumber 109 in /usr/share/votca/scripts/inverse/functions_common.sh
+[31;01m#################################################################################
+#                                                                               #
+# ERROR:                                                                        #
+# do_external: subscript                                                        #
+# /usr/share/votca/scripts/inverse/table_integrate.pl AMD-AMD.force AMD-AMD.pot #
+# (from tags table integrate) failed                                            #
+# Details can be found above                                                    #
+#                                                                               #
+#################################################################################[0m
+/var/spool/slurm/d/job11270490/slurm_script: line 22: 24420 Terminated              csg_call table integrate AMD-AMD.force AMD-AMD.pot
+Running subscript 'table_linearop.pl AMD-AMD.pot AMD-AMD.pot -1 0' (from tags table linearop) dir /usr/share/votca/scripts/inverse
+readin_table: could not open file AMD-AMD.pot
+table_linearop.pl: AMD-AMD.pot to AMD-AMD.pot with y' = -1*y + 0 
+
+Callstack:
+/usr/bin/csg_call - linenumber 199
+    do_external - linenumber 177 in /usr/share/votca/scripts/inverse/functions_common.sh
+        die - linenumber 109 in /usr/share/votca/scripts/inverse/functions_common.sh
+[31;01m###################################################################################
+#                                                                                 #
+# ERROR:                                                                          #
+# do_external: subscript                                                          #
+# /usr/share/votca/scripts/inverse/table_linearop.pl AMD-AMD.pot AMD-AMD.pot -1 0 #
+# (from tags table linearop) failed                                               #
+# Details can be found above                                                      #
+#                                                                                 #
+###################################################################################[0m
+/var/spool/slurm/d/job11270490/slurm_script: line 23: 24441 Terminated              csg_call table linearop AMD-AMD.pot AMD-AMD.pot -1 0
+cp: cannot stat 'AMD-AMD.pot': No such file or directory
+csg_get_property: No value for 'cg.inverse.scriptpath' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: No value for 'cg.inverse.program' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: value for 'cg.inverse.program' from /usr/share/votca/xml/csg_defaults.xml: gromacs
+csg_get_property: returning emtpy value for 'cg.inverse.scriptpath'
+csg_get_property: No value for 'cg.inverse.program' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: value for 'cg.inverse.program' from /usr/share/votca/xml/csg_defaults.xml: gromacs
+We are using Sim Program: gromacs
+csg_get_property: No value for 'cg.inverse.gromacs.gmxrc' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: No value for 'cg.inverse.program' found in settings_FM_AMD-AMD.xml, trying /usr/share/votca/xml/csg_defaults.xml
+csg_get_property: value for 'cg.inverse.program' from /usr/share/votca/xml/csg_defaults.xml: gromacs
+csg_get_property: returning emtpy value for 'cg.inverse.gromacs.gmxrc'
+Running subscript 'potential_to_gromacs.sh --clean input_AMD-AMD.pot table_AMD-AMD.xvg' (from tags convert_potential gromacs) dir /usr/share/votca/scripts/inverse
+
+Callstack:
+/usr/bin/csg_call - linenumber 199
+    do_external - linenumber 176 in /usr/share/votca/scripts/inverse/functions_common.sh
+        /usr/share/votca/scripts/inverse/potential_to_gromacs.sh - linenumber 80
+            die - linenumber 2 (see 'csg_call --cat function die')
+[31;01m##########################################################################
+#                                                                        #
+# ERROR:                                                                 #
+# potential_to_gromacs.sh: Could not find input file 'input_AMD-AMD.pot' #
+# Details can be found above                                             #
+#                                                                        #
+##########################################################################[0m
+/var/spool/slurm/d/job11270490/slurm_script: line 25: 24458 Terminated              csg_call --ia-type non-bonded --ia-name AMD-AMD --options settings_FM_AMD-AMD.xml convert_potential gromacs --clean input_AMD-AMD.pot table_AMD-AMD.xvg

@@ -1,0 +1,8 @@
+tab set T 300
+tab set scale angle
+tab set auto 0
+tab set min 2.02
+tab set max 2.56
+tab set n 56
+tab AMD2-CA3-COO.pot.ib *AMD2-CA3-COO*
+q

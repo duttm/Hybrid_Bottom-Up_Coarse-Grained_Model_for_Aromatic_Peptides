@@ -1,0 +1,600 @@
+<cg_molecule>
+<name>FFF</name>
+<ident>FFF</ident>
+<topology>
+<cg_beads>
+    <cg_bead>
+        <name>NH3</name>
+        <type>NH3</type>
+        <mapping>NH3</mapping>
+        <beads>1:NH3:N 1:NH3:H1 1:NH3:H2 1:NH3:H3</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>CA1</name>
+        <type>CA</type>
+        <mapping>CA</mapping>
+        <beads>2:CA:CA 2:CA:HA</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHA1</name>
+        <type>PHA</type>
+        <mapping>PHA</mapping>
+        <beads>3:PHA:CB 3:PHA:CG 3:PHA:CD1 3:PHA:HB1 3:PHA:HB2 3:PHA:HD1</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHB1</name>
+        <type>PHB</type>
+        <mapping>PHB</mapping>
+        <beads>4:PHB:CE1 4:PHB:CZ 4:PHB:HE1 4:PHB:HZ</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHC1</name>
+        <type>PHC</type>
+        <mapping>PHC</mapping>
+        <beads>5:PHC:CE2 5:PHC:CD2 5:PHC:HE2 5:PHC:HD2</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>AMD1</name>
+        <type>AMD</type>
+        <mapping>AMD</mapping>
+        <beads>6:AMD:O 6:AMD:N 6:AMD:C 6:AMD:H</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>CA2</name>
+        <type>CA</type>
+        <mapping>CA</mapping>
+        <beads>7:CA:CA 7:CA:HA</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHA2</name>
+        <type>PHA</type>
+        <mapping>PHA</mapping>
+        <beads>8:PHA:CB 8:PHA:CG 8:PHA:CD1 8:PHA:HB1 8:PHA:HB2 8:PHA:HD1</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHB2</name>
+        <type>PHB</type>
+        <mapping>PHB</mapping>
+        <beads>9:PHB:CE1 9:PHB:CZ 9:PHB:HE1 9:PHB:HZ</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHC2</name>
+        <type>PHC</type>
+        <mapping>PHC</mapping>
+        <beads>10:PHC:CE2 10:PHC:CD2 10:PHC:HE2 10:PHC:HD2</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>AMD2</name>
+        <type>AMD</type>
+        <mapping>AMD</mapping>
+        <beads>11:AMD:O 11:AMD:N 11:AMD:C 11:AMD:H</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>CA3</name>
+        <type>CA</type>
+        <mapping>CA</mapping>
+        <beads>12:CA:CA 12:CA:HA</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHA3</name>
+        <type>PHA</type>
+        <mapping>PHA</mapping>
+        <beads>13:PHA:CB 13:PHA:CG 13:PHA:CD1 13:PHA:HB1 13:PHA:HB2 13:PHA:HD1</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHB3</name>
+        <type>PHB</type>
+        <mapping>PHB</mapping>
+        <beads>14:PHB:CE1 14:PHB:CZ 14:PHB:HE1 14:PHB:HZ</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>PHC3</name>
+        <type>PHC</type>
+        <mapping>PHB</mapping>
+        <beads>15:PHC:CE2 15:PHC:CD2 15:PHC:HE2 15:PHC:HD2</beads>
+    </cg_bead>
+    <cg_bead>
+        <name>COO</name>
+        <type>COO</type>
+        <mapping>COO</mapping>
+        <beads>16:COO:OC1 16:COO:OC2 16:COO:C</beads>
+    </cg_bead>
+</cg_beads>
+
+<cg_bonded>
+	<bond>
+		<name>NH3-CA1</name>
+		<beads>
+			NH3 CA1
+		</beads>
+	</bond>
+	<bond>
+		<name>CA1-PHA1</name>
+		<beads>
+			CA1 PHA1
+		</beads>
+	</bond>
+	<bond>
+		<name>PHA1-PHB1</name>
+		<beads>
+			PHA1 PHB1
+		</beads>
+	</bond>
+	<bond>
+		<name>PHB1-PHC1</name>
+		<beads>
+			PHB1 PHC1
+		</beads>
+	</bond>
+	<bond>
+		<name>PHC1-PHA1</name>
+		<beads>
+			PHC1 PHA1
+		</beads>
+	</bond>
+	<bond>
+		<name>CA1-AMD1</name>
+		<beads>
+			CA1 AMD1
+		</beads>
+	</bond>
+	<bond>
+		<name>AMD1-CA2</name>
+		<beads>
+			AMD1 CA2
+		</beads>
+	</bond>
+	<bond>
+		<name>CA2-PHA2</name>
+		<beads>
+			CA2 PHA2
+		</beads>
+	</bond>
+	<bond>
+		<name>PHA2-PHB2</name>
+		<beads>
+			PHA2 PHB2
+		</beads>
+	</bond>
+	<bond>
+		<name>PHB2-PHC2</name>
+		<beads>
+			PHB2 PHC2
+		</beads>
+	</bond>
+	<bond>
+		<name>PHC2-PHA2</name>
+		<beads>
+			PHC2 PHA2
+		</beads>
+	</bond>
+	<bond>
+		<name>CA2-AMD2</name>
+		<beads>
+			CA2 AMD2
+		</beads>
+	</bond>
+	<bond>
+		<name>AMD2-CA3</name>
+		<beads>
+			AMD2 CA3
+		</beads>
+	</bond>
+	<bond>
+		<name>CA3-PHA3</name>
+		<beads>
+			CA3 PHA3
+		</beads>
+	</bond>
+	<bond>
+		<name>PHA3-PHB3</name>
+		<beads>
+			PHA3 PHB3
+		</beads>
+	</bond>
+	<bond>
+		<name>PHB3-PHC3</name>
+		<beads>
+			PHB3 PHC3
+		</beads>
+	</bond>
+	<bond>
+		<name>PHC3-PHA3</name>
+		<beads>
+			PHC3 PHA3
+		</beads>
+	</bond>
+	<bond>
+		<name>CA3-COO</name>
+		<beads>
+			CA3 COO
+		</beads>
+	</bond>
+
+	<angle>
+		<name>NH3-CA1-AMD1</name>
+		<beads>
+			NH3 CA1 AMD1
+		</beads>
+	</angle>
+	<angle>
+		<name>CA1-AMD1-CA2</name>
+		<beads>
+			CA1 AMD1 CA2
+		</beads>
+	</angle>
+	<angle>
+		<name>AMD1-CA2-AMD2</name>
+		<beads>
+			AMD1 CA2 AMD2
+		</beads>
+	</angle>
+	<angle>
+		<name>CA2-AMD2-CA3</name>
+		<beads>
+			CA2 AMD2 CA3
+		</beads>
+	</angle>
+	<angle>
+		<name>AMD2-CA3-COO</name>
+		<beads>
+			AMD2 CA3 COO
+		</beads>
+	</angle>
+	<angle>
+		<name>NH3-CA1-PHA1</name>
+		<beads>
+			NH3 CA1 PHA1
+		</beads>
+	</angle>
+	<angle>
+		<name>CA1-PHA1-PHB1</name>
+		<beads>
+			CA1 PHA1 PHB1
+		</beads>
+	</angle>
+	<angle>
+		<name>CA1-PHA1-PHC1</name>
+		<beads>
+			CA1 PHA1 PHC1
+		</beads>
+	</angle>
+	<angle>
+		<name>PHA1-PHB1-PHC1</name>
+		<beads>
+			PHA1 PHB1 PHC1
+		</beads>
+	</angle>
+	<angle>
+		<name>PHB1-PHC1-PHA1</name>
+		<beads>
+			PHB1 PHC1 PHA1
+		</beads>
+	</angle>
+	<angle>
+		<name>PHC1-PHA1-PHB1</name>
+		<beads>
+			PHC1 PHA1 PHB1
+		</beads>
+	</angle>
+	<angle>
+		<name>AMD1-CA1-PHA1</name>
+		<beads>
+			AMD1 CA1 PHA1
+		</beads>
+	</angle>
+	<angle>
+		<name>AMD1-CA2-PHA2</name>
+		<beads>
+			AMD1 CA2 PHA2
+		</beads>
+	</angle>
+	<angle>
+		<name>CA2-PHA2-PHB2</name>
+		<beads>
+			CA2 PHA2 PHB2
+		</beads>
+	</angle>
+	<angle>
+		<name>CA2-PHA2-PHC2</name>
+		<beads>
+			CA2 PHA2 PHC2
+		</beads>
+	</angle>
+	<angle>
+		<name>PHA2-PHB2-PHC2</name>
+		<beads>
+			PHA2 PHB2 PHC2
+		</beads>
+	</angle>
+	<angle>
+		<name>PHB2-PHC2-PHA2</name>
+		<beads>
+			PHB2 PHC2 PHA2
+		</beads>
+	</angle>
+	<angle>
+		<name>PHC2-PHA2-PHB2</name>
+		<beads>
+			PHC2 PHA2 PHB2
+		</beads>
+	</angle>
+	<angle>
+		<name>AMD2-CA2-PHA2</name>
+		<beads>
+			AMD2 CA2 PHA2
+		</beads>
+	</angle>
+	<angle>
+		<name>AMD2-CA3-PHA3</name>
+		<beads>
+			AMD2 CA3 PHA3
+		</beads>
+	</angle>
+	<angle>
+		<name>CA3-PHA3-PHB3</name>
+		<beads>
+			CA3 PHA3 PHB3
+		</beads>
+	</angle>
+	<angle>
+		<name>CA3-PHA3-PHC3</name>
+		<beads>
+			CA3 PHA3 PHC3
+		</beads>
+	</angle>
+	<angle>
+		<name>PHA3-PHB3-PHC3</name>
+		<beads>
+			PHA3 PHB3 PHC3
+		</beads>
+	</angle>
+	<angle>
+		<name>PHB3-PHC3-PHA3</name>
+		<beads>
+			PHB3 PHC3 PHA3
+		</beads>
+	</angle>
+	<angle>
+		<name>PHC3-PHA3-PHB3</name>
+		<beads>
+			PHC3 PHA3 PHB3
+		</beads>
+	</angle>
+	<angle>
+		<name>COO-CA3-PHA3</name>
+		<beads>
+			COO CA3 PHA3
+		</beads>
+	</angle>
+
+<!--    <dihedral>-->
+	<dihedral>
+		<name>NH3-CA1-AMD1-CA2</name>
+		<beads>
+			NH3 CA1 AMD1 CA2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA1-AMD1-CA2-AMD2</name>
+		<beads>
+			CA1 AMD1 CA2 AMD2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD1-CA2-AMD2-CA3</name>
+		<beads>
+			AMD1 CA2 AMD2 CA3
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA2-AMD2-CA3-COO</name>
+		<beads>
+			CA2 AMD2 CA3 COO
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>NH3-CA1-PHA1-PHB1</name>
+		<beads>
+			NH3 CA1 PHA1 PHB1
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>NH3-CA1-PHA1-PHC1</name>
+		<beads>
+			NH3 CA1 PHA1 PHC1
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA1-AMD2-CA2-PHA2</name>
+		<beads>
+			CA1 AMD2 CA2 PHA2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA1-PHA1-PHB1-PHC1</name>
+		<beads>
+			CA1 PHA1 PHB1 PHC1
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA1-PHA1-PHC1-PHB1</name>
+		<beads>
+			CA1 PHA1 PHC1 PHB1
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD1-CA1-PHA1-PHB1</name>
+		<beads>
+			AMD1 CA1 PHA1 PHB1
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD1-CA1-PHA1-PHC1</name>
+		<beads>
+			AMD1 CA1 PHA1 PHC1
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD1-CA2-PHA2-PHB2</name>
+		<beads>
+			AMD1 CA2 PHA2 PHB2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD1-CA2-PHA2-PHC2</name>
+		<beads>
+			AMD1 CA2 PHA2 PHC2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA2-AMD1-CA1-PHA1</name>
+		<beads>
+			CA2 AMD1 CA1 PHA1
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA2-AMD2-CA3-PHA3</name>
+		<beads>
+			CA2 AMD2 CA3 PHA3
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA2-PHA2-PHB2-PHC2</name>
+		<beads>
+			CA2 PHA2 PHB2 PHC2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA2-PHA2-PHC2-PHB2</name>
+		<beads>
+			CA2 PHA2 PHC2 PHB2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD2-CA2-PHA2-PHB2</name>
+		<beads>
+			AMD2 CA2 PHA2 PHB2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD2-CA2-PHA2-PHC2</name>
+		<beads>
+			AMD2 CA2 PHA2 PHC2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD2-CA3-PHA3-PHB3</name>
+		<beads>
+			AMD2 CA3 PHA3 PHB3
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>AMD2-CA3-PHA3-PHC3</name>
+		<beads>
+			AMD2 CA3 PHA3 PHC3
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA3-AMD2-CA2-PHA2</name>
+		<beads>
+			CA3 AMD2 CA2 PHA2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA3-PHA3-PHB3-PHC3</name>
+		<beads>
+			CA3 PHA3 PHB3 PHC3
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>CA3-PHA3-PHC3-PHB3</name>
+		<beads>
+			CA3 PHA3 PHC3 PHB3
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>COO-CA3-PHA3-PHB3</name>
+		<beads>
+			COO CA3 PHA3 PHB3
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>COO-CA3-PHA3-PHC3</name>
+		<beads>
+			COO CA3 PHA3 PHC3
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>PHA1-PHB1-PHC1-PHA1</name>
+		<beads>
+			PHA1 PHB1 PHC1 PHA1
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>PHA2-PHB2-PHC2-PHA2</name>
+		<beads>
+			PHA2 PHB2 PHC2 PHA2
+		</beads>
+	</dihedral>
+	<dihedral>
+		<name>PHA3-PHB3-PHC3-PHA3</name>
+		<beads>
+			PHA3 PHB3 PHC3 PHA3
+		</beads>
+	</dihedral>
+
+<!-- super bonds -->
+        <bond>
+                <name>bb-end-end-dist</name>
+                <beads>
+                        CA1 CA3
+                </beads>
+        </bond>
+        <bond>
+                <name>term-end-end-dist</name>
+                <beads>
+                        NH3 COO
+                </beads>
+        </bond>
+        <angle>
+                <name>bb-end-end-angle</name>
+                <beads>
+                        CA1 CA2 CA3
+                </beads>
+        </angle>
+
+
+</cg_bonded>
+</topology>
+<maps>
+    <map>
+        <name>NH3</name>
+        <weights>14 1 1 1</weights>
+    </map>
+    <map>
+        <name>CA</name>
+        <weights>12 1</weights>
+    </map>
+    <map>
+        <name>PHA</name>
+        <weights>12 12 12 1 1 1</weights>
+    </map>
+    <map>
+        <name>PHB</name>
+        <weights>12 12 1 1</weights>
+    </map>
+    <map>
+        <name>PHC</name>
+        <weights>12 12 1 1</weights>
+    </map>
+    <map>
+        <name>AMD</name>
+        <weights>16 14 12 1</weights>
+    </map>
+    <map>
+        <name>COO</name>
+        <weights>16 16 12</weights>
+    </map>
+</maps>
+</cg_molecule>

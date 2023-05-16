@@ -1,0 +1,14 @@
+[ molecule ]
+COO
+
+[ martini ]
+COO
+
+[ mapping ]
+amber
+
+[ atoms ]
+   1     C   COO
+   2   OC1   COO
+   3   OC2   COO
+   

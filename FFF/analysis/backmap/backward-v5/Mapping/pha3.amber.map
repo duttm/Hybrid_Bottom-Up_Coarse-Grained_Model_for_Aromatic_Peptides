@@ -1,0 +1,17 @@
+[ molecule ]
+PHA3
+
+[ martini ]
+PHA3
+
+[ mapping ]
+amber
+
+[ atoms ]
+   1    CB  PHA3
+   2   HB1  PHA3
+   3   HB2  PHA3
+   4    CG  PHA3
+   5   CD1  PHA3
+   6   HD1  PHA3
+   

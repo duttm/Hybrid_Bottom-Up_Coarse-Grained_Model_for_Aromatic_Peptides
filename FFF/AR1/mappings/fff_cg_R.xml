@@ -1,0 +1,397 @@
+<cg_molecule>
+  <name>FFF</name>
+  <ident>FFF</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>NH3</name>
+        <type>NH3</type>
+        <mapping>NH3</mapping>
+        <beads>1:NH3:N 1:NH3:H1 1:NH3:H2 1:NH3:H3</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>CAB1</name>
+        <type>CAB1</type>
+        <mapping>CAB</mapping>
+        <beads>2:CAB:CA 2:CAB:CB 2:CAB:HA 2:CAB:HB1 2:CAB:HB2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>PHE1</name>
+        <type>PHE1</type>
+        <mapping>PHE</mapping>
+        <beads>3:PHE:CG 3:PHE:CD1 3:PHE:CE1 3:PHE:CZ 3:PHE:CE2 3:PHE:CD2 3:PHE:HD1 3:PHE:HE1 3:PHE:HZ 3:PHE:HE2 3:PHE:HD2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>AMD1</name>
+        <type>AMD1</type>
+        <mapping>AMD</mapping>
+        <beads>4:AMD:C 4:AMD:O 4:AMD:N 4:AMD:H</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>CAB2</name>
+        <type>CAB2</type>
+        <mapping>CAB</mapping>
+        <beads>5:CAB:CA 5:CAB:CB 5:CAB:HA 5:CAB:HB1 5:CAB:HB2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>PHE2</name>
+        <type>PHE2</type>
+        <mapping>PHE</mapping>
+        <beads>6:PHE:CG 6:PHE:CD1 6:PHE:CE1 6:PHE:CZ 6:PHE:CE2 6:PHE:CD2 6:PHE:HD1 6:PHE:HE1 6:PHE:HZ 6:PHE:HE2 6:PHE:HD2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>AMD2</name>
+        <type>AMD2</type>
+        <mapping>AMD</mapping>
+        <beads>7:AMD:C 7:AMD:O 7:AMD:N 7:AMD:H</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>CAB3</name>
+        <type>CAB3</type>
+        <mapping>CAB</mapping>
+        <beads>8:CAB:CA 8:CAB:CB 8:CAB:HA 8:CAB:HB1 8:CAB:HB2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>PHE3</name>
+        <type>PHE3</type>
+        <mapping>PHE</mapping>
+        <beads>9:PHE:CG 9:PHE:CD1 9:PHE:CE1 9:PHE:CZ 9:PHE:CE2 9:PHE:CD2 9:PHE:HD1 9:PHE:HE1 9:PHE:HZ 9:PHE:HE2 9:PHE:HD2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>COO</name>
+        <type>COO</type>
+        <mapping>COO</mapping>
+        <beads>10:COO:C 10:COO:OC1 10:COO:OC2</beads>
+      </cg_bead>
+  </cg_beads>
+
+
+  <cg_bonded>
+    <bond>
+      <name>F1B1</name>
+      <beads>
+        PHE1 CAB1
+      </beads>
+    </bond>
+    <bond>
+      <name>NB1</name>
+      <beads>
+        NH3 CAB1
+      </beads>
+    </bond>
+    <bond>
+      <name>B1A1</name>
+      <beads>
+        CAB1 AMD1
+      </beads>
+    </bond>
+    <bond>
+      <name>A1B2</name>
+      <beads>
+        AMD1 CAB2
+      </beads>
+    </bond>
+    <bond>
+      <name>B2F2</name>
+      <beads>
+        CAB2 PHE2
+      </beads>
+    </bond>
+    <bond>
+      <name>B2A2</name>
+      <beads>
+        CAB2 AMD2
+      </beads>
+    </bond>
+    <bond>
+      <name>A2B3</name>
+      <beads>
+        AMD2 CAB3
+      </beads>
+    </bond>
+    <bond>
+      <name>B3F3</name>
+      <beads>
+        CAB3 PHE3
+      </beads>
+    </bond>
+    <bond>
+      <name>B3C</name>
+      <beads>
+        CAB3 COO
+      </beads>
+    </bond>
+
+<!--super bonds-->
+    <bond>
+      <name>term</name>
+      <beads>
+        NH3 COO
+      </beads>
+    </bond>
+    <bond>
+      <name>b151</name>
+      <beads>
+        COO AMD2
+      </beads>
+    </bond>
+    <bond>
+      <name>end-b152</name>
+      <beads>
+        CAB1 CAB3
+      </beads>
+    </bond>
+    <bond>
+      <name>b153</name>
+      <beads>
+        AMD1 NH3
+      </beads>
+    </bond>
+    <bond>
+      <name>b154</name>
+      <beads>
+        PHE1 AMD2
+      </beads>
+    </bond>
+    <bond>
+      <name>b155</name>
+      <beads>
+        PHE1 PHE2
+      </beads>
+    </bond>
+    <bond>
+      <name>b156</name>
+      <beads>
+        AMD1 PHE3
+      </beads>
+    </bond>
+    <bond>
+      <name>b157</name>
+      <beads>
+        PHE2 PHE3
+      </beads>
+    </bond>
+    <bond>
+      <name>b158</name>
+      <beads>
+        PHE2 NH3
+      </beads>
+    </bond>
+        <bond>
+      <name>F1F3</name>
+      <beads>
+    	PHE1 PHE3
+      </beads>
+    </bond>
+    <bond>
+      <name>F1F2</name>
+      <beads>
+	    PHE1 PHE2
+      </beads>
+    </bond>
+    <bond>
+      <name>F2F3</name>
+      <beads>
+	    PHE2 PHE3
+      </beads>
+    </bond>
+
+<!-- angles -->
+    <angle>
+      <name>F1B1N</name>
+      <beads>
+        PHE1 CAB1 NH3
+      </beads>
+    </angle>
+    <angle>
+      <name>F1B1A1</name>
+      <beads>
+        PHE1 CAB1 AMD1
+      </beads>
+    </angle>
+    <angle>
+      <name>NB1A1</name>
+      <beads>
+        NH3 CAB1 AMD1
+      </beads>
+    </angle>
+    <angle>
+      <name>B1A1B2</name>
+      <beads>
+        CAB1 AMD1 CAB2
+      </beads>
+    </angle>
+    <angle>
+      <name>A1B2F2</name>
+      <beads>
+        AMD1 CAB2 PHE2
+      </beads>
+    </angle>
+    <angle>
+      <name>A1B2A2</name>
+      <beads>
+        AMD1 CAB2 AMD2
+      </beads>
+    </angle>
+    <angle>
+      <name>B2A2B3</name>
+      <beads>
+        CAB2 AMD2 CAB3
+      </beads>
+    </angle>
+    <angle>
+      <name>F2B2A2</name>
+      <beads>
+        PHE2 CAB2 AMD2
+      </beads>
+    </angle>
+    <angle>
+      <name>A2B3F3</name>
+      <beads>
+        AMD2 CAB3 PHE3
+      </beads>
+    </angle>
+    <angle>
+      <name>A2B3C</name>
+      <beads>
+        AMD2 CAB3 COO
+      </beads>
+    </angle>
+    <angle>
+      <name>F3B3C</name>
+      <beads>
+        PHE3 CAB3 COO
+      </beads>
+    </angle>
+
+<!--super angles-->
+    <angle>
+      <name>a1351</name>
+      <beads>
+        COO AMD1 AMD2
+      </beads>
+    </angle>
+    <angle>
+      <name>a1352</name>
+      <beads>
+        CAB1 CAB2 CAB3
+      </beads>
+    </angle>
+    <angle>
+      <name>a1353</name>
+      <beads>
+        AMD1 AMD2 NH3
+      </beads>
+    </angle>
+    <angle>
+      <name>a1354</name>
+      <beads>
+        PHE1 AMD1 AMD2
+      </beads>
+    </angle>
+    <angle>
+      <name>a1355</name>
+      <beads>
+        PHE1 AMD1 PHE2
+      </beads>
+    </angle>
+    <angle>
+      <name>a1356</name>
+      <beads>
+        AMD1 AMD2 PHE3
+      </beads>
+    </angle>
+    <angle>
+      <name>a1357</name>
+      <beads>
+        PHE2 AMD2 PHE3
+      </beads>
+    </angle>
+    <angle>
+      <name>a1358</name>
+      <beads>
+        PHE2 AMD2 NH3
+      </beads>
+    </angle>
+    <angle>
+      <name>a2009</name>
+      <beads>
+        PHE1 PHE2 PHE3
+      </beads>
+    </angle>
+
+<!-- dihedrals -->
+    <dihedral>
+      <name>F1B1A1B2</name>
+      <beads>
+        PHE1 CAB1 AMD1 CAB2
+      </beads>
+    </dihedral>
+    <dihedral>
+      <name>NB1A1B2</name>
+      <beads>
+          NH3 CAB1 AMD1 CAB2
+      </beads>
+    </dihedral>
+    <dihedral>
+      <name>B1A1B2F2</name>
+      <beads>
+          CAB1 AMD1 CAB2 PHE2
+      </beads>
+    </dihedral>
+    <dihedral>
+      <name>B1A1B2A2</name>
+      <beads>
+        CAB1 AMD1 CAB2 AMD2
+      </beads>
+    </dihedral>
+    <dihedral>
+      <name>A1B2A2B3</name>
+      <beads>
+        AMD1 CAB2 AMD2 CAB3
+      </beads>
+    </dihedral>
+    <dihedral>
+      <name>F2B2A2B3</name>
+      <beads>
+        PHE2 CAB2 AMD2 CAB3
+      </beads>
+    </dihedral>
+    <dihedral>
+      <name>B2A2B3F3</name>
+      <beads>
+        CAB2 AMD2 CAB3 PHE3
+      </beads>
+    </dihedral>
+    <dihedral>
+      <name>B2A2B3C</name>
+      <beads>
+        CAB2 AMD2 CAB3 COO
+      </beads>
+    </dihedral>
+  </cg_bonded>
+  </topology>
+
+  <maps>
+    <map>
+      <name>NH3</name>
+      <weights>14 1 1 1</weights>
+    </map>
+    <map>
+      <name>CAB</name>
+      <weights>12 12 1 1 1</weights>
+    </map>
+    <map>
+      <name>PHE</name>
+      <weights>12 12 12 12 12 12 1 1 1 1 1</weights>
+    </map>
+    <map>
+      <name>AMD</name>
+      <weights>12 16 14 1</weights>
+    </map>
+    <map>
+      <name>COO</name>
+      <weights>12 16 16</weights>
+    </map>
+  </maps>
+</cg_molecule>

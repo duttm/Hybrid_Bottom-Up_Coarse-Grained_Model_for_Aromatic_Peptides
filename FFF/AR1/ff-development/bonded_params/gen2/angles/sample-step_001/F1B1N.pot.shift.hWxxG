@@ -1,0 +1,46 @@
+# Created on Mon May 17 23:20:13 EDT 2021 by mason@navi
+# called from potential_to_gromacs.sh, version 1.6.1 gitid: 
+# settings file: '/home/mason/dutt_lab/simulations/IBI_angles/settings.xml'
+# working directory: /home/mason/dutt_lab/simulations/IBI_angles/step_001
+# Comments from /home/mason/dutt_lab/simulations/IBI_angles/step_001/F1B1N.pot.cur:
+# Created on Mon May 17 23:20:06 EDT 2021 by mason@navi
+# called from prepare_generic_single.sh, version 1.6.1 gitid: 
+# settings file: '/home/mason/dutt_lab/simulations/IBI_angles/settings.xml'
+# working directory: /home/mason/dutt_lab/simulations/IBI_angles/step_000
+0 3.210004037 i
+5 3.120837247 i
+10 3.031670457 i
+15 2.942503668 i
+20 2.853336877 i
+25 2.764170097 i
+30 2.675003389 i
+35 2.585836608 i
+40 2.496669818 i
+45 2.407503029 i
+50 2.318336239 i
+55 2.229169449 i
+60 2.140002659 i
+65 2.050835888 i
+70 1.961669177 i
+75 1.872502389 i
+80 1.7833356 i
+85 1.694168809 i
+90 1.60500202 i
+95 1.515835229 i
+100 1.42666844 i
+105 1.337501681 i
+110 1.24833496 i
+115 1.15916817 i
+120 1.070001381 i
+125 0.9808345909 i
+130 0.8916678011 i
+135 0.8025010112 i
+140 0.7133342214 i
+145 0.6241674762 i
+150 0.5350007417 i
+155 0.4458339518 i
+160 0.356667162 i
+165 0.2675003722 i
+170 0.1783335823 i
+175 0.08916681816 i
+180 0 i

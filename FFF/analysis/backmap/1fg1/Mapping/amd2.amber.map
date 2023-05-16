@@ -1,0 +1,15 @@
+[ molecule ]
+AMD2
+
+[ martini ]
+AMD2
+
+[ mapping ]
+amber
+
+[ atoms ]
+   1     C  AMD2
+   2     O  AMD2
+   3     N  AMD2
+   4     H  AMD2
+   

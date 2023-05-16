@@ -1,0 +1,11 @@
+tab set T 300
+
+
+tab set scale dihedral
+tab set min -3.14
+tab set max 3.14
+tab set n 90
+tab B2A2B3F3.pot.ib *B2A2B3F3*
+
+
+q

@@ -1,0 +1,46 @@
+# Created on Fri Nov  4 15:33:32 EDT 2022 by hooten@r015
+# called from potential_to_gromacs.sh, version 1.6.4 
+# settings file: '/ocean/projects/dmr170002p/hooten/fff/second_cg/forcefield/bonded_params/gen2/angles/settings_angles.xml'
+# working directory: /ocean/projects/dmr170002p/hooten/fff/second_cg/forcefield/bonded_params/gen2/angles/step_001
+# Comments from /ocean/projects/dmr170002p/hooten/fff/second_cg/forcefield/bonded_params/gen2/angles/step_001/PHA3-PHB3-PHC3.pot.cur:
+# Created on Fri Nov  4 15:33:24 EDT 2022 by hooten@r015
+# called from prepare_generic_single.sh, version 1.6.4 
+# settings file: '/ocean/projects/dmr170002p/hooten/fff/second_cg/forcefield/bonded_params/gen2/angles/settings_angles.xml'
+# working directory: /ocean/projects/dmr170002p/hooten/fff/second_cg/forcefield/bonded_params/gen2/angles/step_000
+0 8.718620738071 i
+5 8.476436870071 i
+10 8.234252901071 i
+15 7.992069032071 i
+20 7.749885113071 i
+25 7.507701190071 i
+30 7.265517234071 i
+35 7.023333357071 i
+40 6.781149489071 i
+45 6.538965634071 i
+50 6.296781651071 i
+55 6.054597782071 i
+60 5.812413850071 i
+65 5.570229925071 i
+70 5.328045976071 i
+75 5.085862107071 i
+80 4.843678240071 i
+85 4.601494270071 i
+90 4.359310401071 i
+95 4.117126530071 i
+100 3.874942588071 i
+105 3.632758664071 i
+110 3.390574726071 i
+115 3.148390857071 i
+120 2.906206888071 i
+125 2.664023020071 i
+130 2.421839151071 i
+135 2.179655274071 i
+140 1.937471314071 i
+145 1.695287339071 i
+150 1.453103477071 i
+155 1.210919608071 i
+160 0.968735638871 i
+165 0.726551770171 i
+170 0.484367901571 i
+175 0.242183932671 i
+180 0 i
