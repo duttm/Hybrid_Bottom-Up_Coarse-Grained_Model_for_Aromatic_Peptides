@@ -11,7 +11,7 @@ All CG force field development routines are executed using VOTCA 1.6 [[website](
     - [AR1 ff-development](AR1/ff-development)
     - [AR3 ff-development](AR3/ff-development)
     
-3. CG Simulation: We have included files required to run CG simulations a single peptide in aqueous solution and for 25 peptides in aqueous solution. Other files are included to allow easy preparation of systems at other concentrations.
+3. CG Simulation: We have included files required to run CG simulations for a single peptide in aqueous solution and for 25 peptides in aqueous solution. Other files are included to allow easy preparation of systems at other concentrations.
     - [AR1 simulation](AR1/simulations)
     - [AR3 simulation](AR3/simulations)
 
