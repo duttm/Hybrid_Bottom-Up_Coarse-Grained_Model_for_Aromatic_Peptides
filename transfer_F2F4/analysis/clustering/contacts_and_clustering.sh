@@ -22,26 +22,44 @@ printf '%s\n' "9 | 10 | 11" q | gmx make_ndx -f topol.tpr -n index.ndx
 #Group    12 (            COO) has   128 elements
 #Group    13 (    PHA_PHB_PHC) has   768 elements
 
-export ENDTIME=25000
-export DTTIME=1
+export ENDTIME=50000
+export DTTIME=100
 
 #export ENDTIME=500000
 #export DTTIME=1000
 
 export TRAJNAME=md # F2 -25 -32 -64 -128 F4-25
 export TRAJNAME=traj_comp # F4
-
-for i in {0..9};
+export TRAJNAME=traj_comp.part0001 # F2_64
+in
+for i in {1..14};
 do
-cd /home/mason/exdrive/oligo/F2/CG/F4_64-$i
+cd /home/mason/exdrive/oligo/F4/CG/F4_64-$i
 printf '7 7' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_MCMC.xvg -od mindist_MCMC.xvg -dt $DTTIME -e $ENDTIME
 printf '13 13' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_SCSC.xvg -od mindist_SCSC.xvg -dt $DTTIME -e $ENDTIME
 printf '7 13' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_MCSC.xvg -od mindist_MCSC.xvg -dt $DTTIME -e $ENDTIME
 printf '8 8' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_AMDAMD.xvg -od mindist_AMDAMD.xvg -dt $DTTIME -e $ENDTIME
 printf '6 12' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_NH3COO.xvg -od mindist_NH3COO.xvg -dt $DTTIME -e $ENDTIME
-mkdir contacts-0-end-dt1ns
-mv numcont* contacts-0-25/
-mv mindist* contacts-0-25/
+mkdir contacts-0-50
+mv numcont* contacts-0-50/
+mv mindist* contacts-0-50/
+done
+
+
+export TRAJNAME=traj_comp # F4
+export ENDTIME=100000 # 100ns
+export DTTIME=100 # dt 100ps
+for i in {0..14}; 
+do 
+cd /home/mason/exdrive/oligo/F2/CG/F2_64-$i; 
+printf '7 7' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_MCMC.xvg -od mindist_MCMC.xvg -dt $DTTIME -e $ENDTIME
+printf '13 13' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_SCSC.xvg -od mindist_SCSC.xvg -dt $DTTIME -e $ENDTIME
+printf '7 13' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_MCSC.xvg -od mindist_MCSC.xvg -dt $DTTIME -e $ENDTIME
+printf '8 8' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_AMDAMD.xvg -od mindist_AMDAMD.xvg -dt $DTTIME -e $ENDTIME
+printf '6 12' | gmx mindist -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -on numcont_NH3COO.xvg -od mindist_NH3COO.xvg -dt $DTTIME -e $ENDTIME
+mkdir contacts-0-100; 
+mv numcont* contacts-0-100/; 
+mv mindist* contacts-0-100; 
 done
 
 printf '7 7' | gmx mindist -f md.xtc -s topol.tpr -n index.ndx -on numcont_MCMC.xvg -od mindist_MCMC.xvg -e 25000
@@ -116,32 +134,36 @@ printf '14 15' | gmx mindist -f md.xtc -s md.tpr -n index.ndx -on numcont_MCSC.x
 #********************************************************************************
 #***************************************     CLUSTERING
 
-export START=5
-export END=25
+export START=0
+export END=50
 export DT=1
 
 export STARTTIME=$((1000*START))
 export ENDTIME=$((1000*END))
 #export DTTIME=$((1000*DT))
-export DTTIME=1
+export DTTIME=100
 
 export TRAJNAME=md # F2 -25 -32 -64 -128 F4-25
 export TRAJNAME=traj_comp # F4
 
-export PEPCT=64
-
 for i in {0..14};
 do
 cd /home/mason/exdrive/oligo/F4/CG/F4_64-$i
-printf '2' | gmx clustsize -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -nc nclust-0-25.xvg -e $ENDTIME
-mkdir cluster-0-25
-mv nclust* cluster-0-25/
+printf '2' | gmx clustsize -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -nc nclust.xvg -e 50000 -dt 100 -cut 0.6
+mkdir cluster-0-50
+mv nclust* cluster-0-50/
 done
 
+gmx clustsize -f $TRAJNAME.xtc -s topol.tpr -n index.ndx -nc nclust.xvg -dt 100 -e 50000 -pbc yes -cut 0.6
 
 #***************************************     CLUSTERING
 #********************************************************************************
 #********************************************************************************
+
+
+
+
+
 
 
 #********************************************************************************
