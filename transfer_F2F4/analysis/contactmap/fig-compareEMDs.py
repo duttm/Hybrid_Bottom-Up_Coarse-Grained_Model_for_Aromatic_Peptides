@@ -28,13 +28,13 @@ shift=2
 
 # EMD from FES inverted from contact maps
 data = {
-    'FF':{32:{'AA-CG':25.13,'CG-BA':25.69,'AA-BA':3.79},
-        64:{'AA-CG':23.39,'CG-BA':22.92,'AA-BA':2.90},
-        'AA-AA':2.61,'CG-CG':16.41,'BA-BA':3.56,'shift':-shift
+    'FF':{32:{'AA-CG':23.40,'CG-BA':23.56,'AA-BA':4.14},
+        64:{'AA-CG':24.99,'CG-BA':25.16,'AA-BA':2.58},
+        'AA-AA':2.51,'CG-CG':16.61,'BA-BA':2.39,'shift':-shift
     },
-    'FFFF':{32:{'AA-CG':17.17,'CG-BA':18.21,'AA-BA':6.40},
-        64:{'AA-CG':16.63,'CG-BA':16.72,'AA-BA':6.40},
-        'AA-AA':9.60,'CG-CG':12.71,'BA-BA':5.30,'shift':+shift
+    'FFFF':{32:{'AA-CG':21.06,'CG-BA':22.17,'AA-BA':13.00},
+        64:{'AA-CG':15.90,'CG-BA':15.91,'AA-BA':7.30},
+        'AA-AA':11.86,'CG-CG':19.64,'BA-BA':11.30,'shift':+shift
     }
 }
 
@@ -60,7 +60,7 @@ markers = {
     'BA-BA':'>',}
 }
 
-fig, axs = plt.subplots(nrows=1, ncols=2, sharey=True)
+fig, axs = plt.subplots(nrows=1, ncols=2, sharey=True, figsize=(6,4))
 
 artists=[]
 colororder=0
@@ -73,7 +73,7 @@ for i in ['FF','FFFF']:
                     marker=markers[i][k], label=f'{i} {k}', 
                     c=mycmap[int(colororder//6+colororder%3)]))
             colororder=colororder+1
-axs[0].set_title('(a) Compare simulation types')
+axs[0].set_title('(a) Compare scales: AA, CG, BA')
 axs[0].set_xlim([25,71])
 axs[0].set_xticks([32,64])
 axs[0].legend(handles=artists[0:3]+artists[6:9],ncol=1)
@@ -84,11 +84,17 @@ for i in ['FF','FFFF']:
         artists2.append(
             axs[1].scatter(data[i]['shift'],data[i][k]/EMDmax,marker=markers[i][k],label=f'{k}')
         )
-axs[1].set_title('(b) Compare systems 32 vs 64')
+axs[1].set_title('(b) Compare sizes: 32 vs 64')
 axs[1].set_xlim([-2*shift,2*shift])
 axs[1].set_xticks([-shift,shift],['FF','FFFF'])
 axs[1].legend(handles=artists2[0:3])
 
+axs[0].set_ylabel("Scaled EMD")
+axs[0].set_xlabel("Peptide count")
+axs[1].set_xlabel("Peptide type")
+
 plt.tight_layout()
-plt.show()
+#plt.show()
+plt.savefig(f"fig-cmapEMD.png")
+
 

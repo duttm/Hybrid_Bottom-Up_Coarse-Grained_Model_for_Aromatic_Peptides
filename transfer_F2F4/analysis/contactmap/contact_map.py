@@ -16,7 +16,7 @@ user_input_file = sys.argv[1]
 NUMMOL = int(sys.argv[2])
 NUMRESMOL = int(sys.argv[3])
 NUMATOMRES = 1
-FRAMES = 1
+FRAMES = 10
 
 numatoms = NUMMOL*NUMRESMOL*NUMATOMRES
 numres = NUMMOL*NUMRESMOL
