@@ -16,8 +16,8 @@ def make_fes(dat):
 #    print(fes)
     return fes
 
-dat1 = np.loadtxt(inp1,comments=['@','#'])
-dat2 = np.loadtxt(inp2,comments=['@','#'])
+dat1 = np.loadtxt(inp1,comments=['@','#'],delimiter=',')
+dat2 = np.loadtxt(inp2,comments=['@','#'],delimiter=',')
 
 fes1 = make_fes(dat1)
 fes2 = make_fes(dat2)

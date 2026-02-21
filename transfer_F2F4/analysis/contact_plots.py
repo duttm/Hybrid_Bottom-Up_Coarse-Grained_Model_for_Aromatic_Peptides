@@ -150,6 +150,7 @@ def _(makeplotfromdatadir, plt):
 def _(itertools, makeplotfromdatadir, plt, rcParams):
     # ENSEMBLE PLOT
 
+
     END_TIME_ns = 2.5
     figa, ((axa,axb),(axc,axd)) = plt.subplots(nrows=2,ncols=2,figsize=(10,7.5))
     # figa, (axa,axb)= plt.subplots(nrows=2,ncols=1,figsize=(10,7.5))
@@ -179,19 +180,33 @@ def _(itertools, makeplotfromdatadir, plt, rcParams):
         axc.set_prop_cycle(None)
         axd.set_prop_cycle(None)
 
-    figa.text(.1,.5,"Normalized contact counts", ha='center', va='center',rotation=90,fontsize="large")
-    figa.text(.53,.03,"Simulation steps / 1000", ha='center', va='center',rotation=0,fontsize="large")
+    axa.set_xticks([0,500,1000,1500,2000,2500])
+    axb.set_xticks([0,500,1000,1500,2000,2500])
+    axc.set_xticks([0,500,1000,1500,2000,2500])
+    axd.set_xticks([0,500,1000,1500,2000,2500])
+    axa.tick_params(axis='both', which='major', labelsize='x-large')
+    axb.tick_params(axis='both', which='major', labelsize='x-large')
+    axc.tick_params(axis='both', which='major', labelsize='x-large')
+    axd.tick_params(axis='both', which='major', labelsize='x-large')
 
-    figa.text(.07,.7,"32 peptides", ha='center', va='center',rotation=90,fontsize="xx-large")
-    figa.text(.07,.3,"64 peptides", ha='center', va='center',rotation=90,fontsize="xx-large")
+    figa.text(.1,.5,"Normalized contact counts\n\n\n", ha='center', va='center',rotation=90,fontsize="x-large")
+    figa.text(.53,.03,"Simulation steps / 1000", ha='center', va='center',rotation=0,fontsize="x-large")
+
+    figa.text(.07,.7,"32 peptides\n\n\n", ha='center', va='center',rotation=90,fontsize="xx-large")
+    figa.text(.07,.3,"64 peptides\n\n\n", ha='center', va='center',rotation=90,fontsize="xx-large")
 
     figa.text(.32,.95,"F2 systems", ha='center', va='center',rotation=0,fontsize="xx-large")
     figa.text(.75,.95,"F4 systems", ha='center', va='center',rotation=0,fontsize="xx-large")
 
     leg = axd.legend(
         labels=['MC-MC','SC-SC','MC-SC','AMD-AMD','NH3-COO'],
-        loc='center',bbox_to_anchor=(0.8,.26),
 
+        # loc='center',bbox_to_anchor=(0.8,.26),
+        loc='lower right',bbox_to_anchor=(1,.08),
+        ncol=2,
+        handletextpad=0.3,
+        columnspacing=0.4,
+        fontsize="large"
     )
     for lh in leg.legendHandles: 
         lh.set_alpha(1)
@@ -419,7 +434,8 @@ def _(np):
     def read_ensemble(data_files:list):
         ensemble_data = None
         for data_file in data_files:
-            file_data = np.loadtxt(data_file,skiprows=0,max_rows=579,usecols=(0,1),comments=["@","#"])
+            # file_data = np.loadtxt(data_file,skiprows=0,max_rows=579,usecols=(0,1),comments=["@","#"])
+            file_data = np.loadtxt(data_file,skiprows=0,max_rows=1000,usecols=(0,1),comments=["@","#"])
             # print(file_data)
             if type(ensemble_data) == type(None):
                 ensemble_data = file_data
@@ -444,7 +460,7 @@ def _(np):
         ensemble_se_withtime = np.column_stack((ensemble_data[:,0],ensemble_se))
         return ensemble_avg_withtime, ensemble_se_withtime
 
-    
+
 
     return calc_ensemble_avg, make_file_lists, read_ensemble
 
@@ -452,8 +468,8 @@ def _(np):
 @app.cell
 def _(calc_ensemble_avg, make_file_lists, plt, read_ensemble):
     # COUNT_ADJUST=None
-    # COUNT_ADJUST='otherthing'
-    COUNT_ADJUST='invert'
+    COUNT_ADJUST='otherthing'
+    # COUNT_ADJUST='invert'
 
     f232nclust, f232avclust = make_file_lists('F2',32)
     f264nclust, f264avclust = make_file_lists('F2',64)
@@ -498,22 +514,31 @@ def _(calc_ensemble_avg, make_file_lists, plt, read_ensemble):
     axe.fill_between(f464avg_avclust[:,0], f464avg_avclust[:,1]-f464se_avclust[:,1], f464avg_avclust[:,1]+f464se_avclust[:,1], alpha=alphalevel)
 
     # axe.set_title('average size of aggregates [#molecules]')
-    # axe.set_title('average aggregate size in proportion to system size [peptides/peptides]') # otherthing
-    axe.set_title('dispersion -- average number of aggregates in system [#aggregates]') # invert
+    axe.set_title('Portion of system involved in the average aggregate',fontsize='x-large') # otherthing
+    # axe.set_title('dispersion -- average number of aggregates in system [#aggregates]') # invert
 
     lege = axe.legend(
         # loc='center',bbox_to_anchor=(0.58,.29), #
-        # loc='center',bbox_to_anchor=(0.68,.38), # otherthing
-        loc='center',bbox_to_anchor=(0.2,.8), # inverted
+        loc='center',bbox_to_anchor=(0.64,.39), # otherthing
+        # loc='center',bbox_to_anchor=(0.2,.8), # inverted
+
+        fontsize='large'
     )
     for lhe in lege.legendHandles: 
         lhe.set_alpha(1)
 
     # axe.set_ylim([0,71])
-    # axe.set_ylim([0,1.2])
-    axe.set_ylim([0,10])
+    axe.set_ylim([0,1.2])
+    # axe.set_ylim([0,10])
 
     axe.set_xlim([0,59000])
+
+    axe.set_xlabel('Simulation Steps',fontsize='x-large')
+    axe.set_ylabel('# Aggregate / # System [peptides/peptides]',fontsize='x-large')
+
+    axe.set_xticks([0,10000,20000,30000,40000,50000])
+    axe.set_yticks([0.0,0.25,0.5,0.75,1.0])
+    axe.tick_params(axis='both', which='major', labelsize='x-large')
 
     plt.savefig(f"fig-aggregatesize{COUNT_ADJUST}.png")
     plt.show()
